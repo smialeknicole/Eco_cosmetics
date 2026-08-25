@@ -1,5 +1,14 @@
 @import 'utils';
 @import 'typography';
+@import 'navigation';
+@import 'header';
+@import 'section1';
+@import 'about';
+@import 'shop';
+@import 'creators';
+@import 'section2';
+@import 'contact';
+@import 'footer';
 
 body {
   background: $c-gray;
