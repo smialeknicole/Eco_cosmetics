@@ -3,7 +3,7 @@
   font-size: 60px;
   font-weight: 600;
   line-height: 130%;
-  color: #333;
+  color: $primairly-font-color;
   letter-spacing: 0;
 }
 
@@ -17,6 +17,7 @@ h1 {
   font-weight: 600;
   line-height: 110%;
   color: #333;
+  color: $primairly-font-color;
   text-transform: uppercase;
   letter-spacing: 5%;
 }
@@ -31,6 +32,7 @@ h2 {
   font-weight: 600;
   line-height: 150%;
   color: #333;
+  color: $primairly-font-color;
   text-transform: capitalize;
   letter-spacing: 0;
 }
@@ -44,6 +46,7 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   line-height: 150%;
+  color: $primairly-font-color;
   text-transform: uppercase;
   letter-spacing: 5%;
 }
@@ -57,6 +60,7 @@ h4 {
   font-size: 18px;
   font-weight: 600;
   line-height: 150%;
+  color: $primairly-font-color;
   text-transform: uppercase;
   letter-spacing: 5%;
 }
@@ -70,6 +74,7 @@ h5 {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+  color: $primairly-font-color;
   letter-spacing: 0;
 }
 
@@ -82,6 +87,7 @@ text {
   font-size: 14px;
   font-weight: 400;
   line-height: 130%;
+  color: $primairly-font-color;
   text-transform: uppercase;
   letter-spacing: 5%;
 }
@@ -95,6 +101,7 @@ text-2 {
   font-size: 18px;
   font-weight: 500;
   line-height: 150%;
+  color: $primairly-font-color;
   text-transform: uppercase;
   letter-spacing: 5%;
 }
@@ -108,6 +115,7 @@ text-3 {
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
+  color: $primairly-font-color;
   letter-spacing: 0%;
 }
 
@@ -120,6 +128,7 @@ text-small {
   font-size: 18px;
   font-weight: 500;
   line-height: 150%;
+  color: $primairly-font-color;
   text-transform: capitalize;
   letter-spacing: 0;
 }
@@ -133,6 +142,7 @@ text-menu {
   font-size: 16px;
   font-weight: 600;
   line-height: 130%;
+  color: $primairly-font-color;
   text-transform: uppercase;
   letter-spacing: 15%;
 }
@@ -146,6 +156,7 @@ text-button {
   font-size: 14px;
   font-weight: 500;
   line-height: 130%;
+  color: $primairly-font-color;
   letter-spacing: 0%;
 }
 
