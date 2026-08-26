@@ -1,4 +1,4 @@
-%h1 {
+h1 {
   font-family: Poppins, sans-serif;
   font-size: 60px;
   font-weight: 600;
@@ -7,11 +7,7 @@
   letter-spacing: 0;
 }
 
-h1 {
-  @extend %h1;
-}
-
-%h2 {
+h2 {
   font-family: Poppins, sans-serif;
   font-size: 36px;
   font-weight: 600;
@@ -22,11 +18,7 @@ h1 {
   letter-spacing: 5%;
 }
 
-h2 {
-  @extend %h2;
-}
-
-%h3 {
+h3 {
   font-family: Poppins, sans-serif;
   font-size: 36px;
   font-weight: 600;
@@ -37,11 +29,7 @@ h2 {
   letter-spacing: 0;
 }
 
-h3 {
-  @extend %h3;
-}
-
-%h4 {
+h4 {
   font-family: Poppins, sans-serif;
   font-size: 24px;
   font-weight: 600;
@@ -51,11 +39,7 @@ h3 {
   letter-spacing: 5%;
 }
 
-h4 {
-  @extend %h4;
-}
-
-%h5 {
+h5 {
   font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -65,11 +49,7 @@ h4 {
   letter-spacing: 5%;
 }
 
-h5 {
-  @extend %h5;
-}
-
-%text {
+p {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -78,11 +58,7 @@ h5 {
   letter-spacing: 0;
 }
 
-text {
-  @extend %text;
-}
-
-%text-2 {
+.text-2 {
   font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -92,11 +68,7 @@ text {
   letter-spacing: 5%;
 }
 
-text-2 {
-  @extend %text-2;
-}
-
-%text-3 {
+.text-3 {
   font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -106,11 +78,7 @@ text-2 {
   letter-spacing: 5%;
 }
 
-text-3 {
-  @extend %text-3;
-}
-
-%text-small {
+.text-small {
   font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -119,11 +87,7 @@ text-3 {
   letter-spacing: 0%;
 }
 
-text-small {
-  @extend %text-small;
-}
-
-%text-menu {
+.text-menu {
   font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -133,11 +97,7 @@ text-small {
   letter-spacing: 0;
 }
 
-text-menu {
-  @extend %text-menu;
-}
-
-%text-button {
+button {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -147,19 +107,11 @@ text-menu {
   letter-spacing: 15%;
 }
 
-text-button {
-  @extend %text-button;
-}
-
-%text-decorative {
+.text-decorative {
   font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 130%;
   color: $primairly-font-color;
   letter-spacing: 0%;
-}
-
-text-decorative {
-  @extend %text-button;
 }
