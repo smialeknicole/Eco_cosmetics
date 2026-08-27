@@ -3,8 +3,7 @@ h1 {
   font-size: 60px;
   font-weight: 600;
   line-height: 130%;
-  color: $primairly-font-color;
-  text-align: center;
+  color: #333;
   letter-spacing: 0;
 }
 
@@ -14,7 +13,7 @@ h2 {
   font-weight: 600;
   line-height: 110%;
   color: #333;
-  color: $primairly-font-color;
+  color: #333;
   text-transform: uppercase;
   letter-spacing: 5%;
 }
@@ -25,7 +24,7 @@ h3 {
   font-weight: 600;
   line-height: 150%;
   color: #333;
-  color: $primairly-font-color;
+  color: #333;
   text-transform: capitalize;
   letter-spacing: 0;
 }
@@ -35,7 +34,7 @@ h4 {
   font-size: 24px;
   font-weight: 600;
   line-height: 150%;
-  color: $primairly-font-color;
+  color: #333;
   text-transform: uppercase;
   letter-spacing: 5%;
 }
@@ -45,7 +44,7 @@ h5 {
   font-size: 18px;
   font-weight: 600;
   line-height: 150%;
-  color: $primairly-font-color;
+  color: #333;
   text-transform: uppercase;
   letter-spacing: 5%;
 }
@@ -55,8 +54,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
-  color: $primairly-font-color;
-  text-align: center;
+  color: #333;
   letter-spacing: 0;
 }
 
@@ -65,7 +63,7 @@ p {
   font-size: 14px;
   font-weight: 400;
   line-height: 130%;
-  color: $primairly-font-color;
+  color: #333;
   text-transform: uppercase;
   letter-spacing: 5%;
 }
@@ -75,7 +73,7 @@ p {
   font-size: 18px;
   font-weight: 500;
   line-height: 150%;
-  color: $primairly-font-color;
+  color: #333;
   text-transform: uppercase;
   letter-spacing: 5%;
 }
@@ -85,7 +83,7 @@ p {
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
-  color: $primairly-font-color;
+  color: #333;
   letter-spacing: 0%;
 }
 
@@ -94,7 +92,7 @@ p {
   font-size: 18px;
   font-weight: 500;
   line-height: 150%;
-  color: $primairly-font-color;
+  color: #333;
   text-transform: capitalize;
   letter-spacing: 0;
 }
@@ -104,8 +102,7 @@ button {
   font-size: 16px;
   font-weight: 600;
   line-height: 130%;
-  color: $primairly-font-color;
-  text-align: center;
+  color: #333;
   text-transform: uppercase;
   letter-spacing: 15%;
 }
@@ -115,6 +112,48 @@ button {
   font-size: 14px;
   font-weight: 500;
   line-height: 130%;
-  color: $primairly-font-color;
+  color: #333;
   letter-spacing: 0%;
 }
+
+.navigation__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+
+.header {
+  background-image: url(../images/header_mobile.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.wrapper {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .wrapper {
+    grid-template-columns: repeat(12, 80px);
+    gap: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    grid-template-columns: repeat(12, 80px);
+  }
+}
+
+body {
+  background: #eee;
+}
+
+/*# sourceMappingURL=styles.scss.map */

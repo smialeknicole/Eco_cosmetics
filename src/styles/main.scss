@@ -1,7 +1,9 @@
+@import 'reset';
 @import 'utils';
 @import 'typography';
 @import 'navigation';
 @import 'header';
+@import 'hero';
 @import 'section1';
 @import 'about';
 @import 'shop';
@@ -10,6 +12,7 @@
 @import 'contact';
 @import 'footer';
 @import '../styles/layout/wrapper';
+@import 'button';
 
 body {
   background: $c-gray;

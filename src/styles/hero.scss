@@ -1,0 +1,18 @@
+.hero {
+  width: 100vw;
+  height: 250px;
+
+  background-image: url('src/images/header_mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 130%;
+}
+
+button {
+  justify-content: center;
+}
