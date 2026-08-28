@@ -1,3 +1,15 @@
-.foo {
-  // TODO
+@use '../styles/utils/mixins';
+
+.about {
+  grid-column: 1/-1;
+
+  h4,
+  p,
+  a {
+    grid-column: 1/-1;
+  }
+
+  &__button {
+    grid-column: 1/-1;
+  }
 }

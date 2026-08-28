@@ -1,3 +1,40 @@
-.foo {
-  // TODO
+@use '../styles/utils/mixins';
+
+.shop {
+  h4 {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 34px;
+  }
+
+  &__image {
+    grid-column: 1/-1;
+
+    width: 100%;
+    width: calc(100% + 40px);
+    height: 267px;
+    margin-left: -20px;
+
+    background-image: url('src/images/shopimage_mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__name {
+    grid-column: 1 / -1;
+  }
+
+  &__price {
+    grid-column: 1 / -1;
+  }
+  .button {
+    grid-column: 1 / -1;
+  }
 }
