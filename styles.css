@@ -368,6 +368,31 @@ button {
   text-align: center;
 }
 
+.contact {
+  grid-column: 1/-1;
+}
+.contact__title {
+  grid-column: 1/-1;
+}
+.contact__description {
+  grid-column: 1/-1;
+}
+.contact__form {
+  grid-column: 1/-1;
+}
+.contact__label:not(:focus, :active) {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+.contact__button {
+  grid-column: 1/-1;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

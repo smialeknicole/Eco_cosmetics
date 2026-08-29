@@ -1,3 +1,35 @@
-.foo {
-  // TODO
+@use './utils/mixins';
+
+.contact {
+  grid-column: 1/-1;
+
+  &__title {
+    grid-column: 1/-1;
+  }
+
+  &__description {
+    grid-column: 1/-1;
+  }
+
+  &__form {
+    grid-column: 1/-1;
+  }
+
+  &__label {
+    &:not(:focus, :active) {
+      @include visually-hidden;
+    }
+  }
+
+  // &__input {
+
+  // }
+
+  // &__textarea {
+
+  // }
+
+  &__button {
+    grid-column: 1/-1;
+  }
 }
