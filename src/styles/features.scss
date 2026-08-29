@@ -1,0 +1,21 @@
+.features {
+  &__composition {
+    margin-bottom: 100px;
+  }
+
+  &__image {
+    grid-column: 1/-1;
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  p {
+    grid-column: 1/-1;
+    justify-self: center;
+    text-align: center;
+  }
+}

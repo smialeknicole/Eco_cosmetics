@@ -351,6 +351,23 @@ button {
   grid-column: 1/-1;
 }
 
+.features__composition {
+  margin-bottom: 100px;
+}
+.features__image {
+  grid-column: 1/-1;
+  margin-bottom: 30px;
+}
+.features__icon {
+  grid-column: 1/-1;
+  justify-self: center;
+}
+.features p {
+  grid-column: 1/-1;
+  justify-self: center;
+  text-align: center;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
