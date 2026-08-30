@@ -1,3 +1,25 @@
-.foo {
-  // TODO
+.footer {
+  grid-column: 1/-1;
+
+  &__link {
+    grid-column: 1/-1;
+    text-decoration: none;
+  }
+
+  &__icon {
+    grid-column: 1/-1;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__address {
+    grid-column: 1/-1;
+    text-decoration: none;
+  }
+
+  &__end {
+    grid-column: 1/-1;
+    justify-self: center;
+    text-decoration: none;
+  }
 }
