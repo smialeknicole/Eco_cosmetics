@@ -255,7 +255,8 @@ button {
   font-size: 14px;
   font-weight: 500;
   line-height: 130%;
-  color: #333;
+  color: #344f10;
+  text-transform: uppercase;
   letter-spacing: 0%;
 }
 
@@ -294,20 +295,26 @@ button {
 .quote {
   margin: 100px 0;
 }
+.quote__title {
+  color: #344f10;
+}
 
 .about {
   grid-column: 1/-1;
 }
-.about h4,
-.about p,
-.about a {
+.about__title {
   grid-column: 1/-1;
+}
+.about__description {
+  grid-column: 1/-1;
+  color: #333;
 }
 .about__button {
   grid-column: 1/-1;
+  text-decoration: none;
 }
 
-.shop h4 {
+.shop__title {
   grid-column: 1/-1;
   justify-self: center;
 }
@@ -316,6 +323,9 @@ button {
   grid-column: 1/-1;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 34px;
+}
+.shop__cat {
+  color: #828282;
 }
 .shop__image {
   grid-column: 1/-1;
@@ -328,11 +338,11 @@ button {
   background-position: center;
   background-size: cover;
 }
-.shop__name {
+.shop__productinfo {
   grid-column: 1/-1;
 }
-.shop__price {
-  grid-column: 1/-1;
+.shop__name {
+  margin-bottom: 10px;
 }
 .shop .button {
   grid-column: 1/-1;
@@ -341,15 +351,24 @@ button {
 .creators {
   grid-column: 1/-1;
 }
-.creators h4,
-.creators p,
-.creators a {
+.creators__title {
   grid-column: 1/-1;
+}
+.creators__description {
+  grid-column: 1/-1;
+  color: #333;
 }
 .creators__button {
   grid-column: 1/-1;
+  text-decoration: none;
+}
+.creators__contact {
+  grid-column: 1/-1;
 }
 
+.features__title {
+  grid-column: 1/-1;
+}
 .features__composition {
   margin-bottom: 100px;
 }
@@ -357,13 +376,26 @@ button {
   grid-column: 1/-1;
   margin-bottom: 30px;
 }
-.features__icon {
+.features__icons {
   grid-column: 1/-1;
-  justify-self: center;
+  margin-top: 100px;
 }
-.features p {
+.features__icon {
+  display: flex;
+  grid-column: 1/-1;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+.features__button {
+  grid-column: 1/-1;
+  text-decoration: none;
+}
+.features__icontitle {
   grid-column: 1/-1;
   justify-self: center;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -375,6 +407,7 @@ button {
 }
 .contact__description {
   grid-column: 1/-1;
+  color: #333;
 }
 .contact__form {
   grid-column: 1/-1;
@@ -422,25 +455,45 @@ button {
 }
 
 .footer {
-  grid-column: 1/-1;
+  padding: 30px 20px;
+  background-color: #8c9772;
 }
 .footer__link {
   grid-column: 1/-1;
+  color: #e4dfd3;
   text-decoration: none;
 }
-.footer__icon {
+.footer__icons {
+  display: flex;
   grid-column: 1/-1;
+  gap: 20px;
   width: 20px;
   height: 20px;
+  margin-bottom: 40px;
 }
-.footer__address {
+.footer__addres {
   grid-column: 1/-1;
+  color: #e4dfd3;
+  text-decoration: none;
+}
+.footer__addressline {
+  display: flex;
+  grid-column: 1/-1;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: #e4dfd3;
   text-decoration: none;
 }
 .footer__end {
   grid-column: 1/-1;
   justify-self: center;
+  color: #e4dfd3;
+  text-align: center;
   text-decoration: none;
+  text-transform: none;
+}
+.footer .wrapper {
+  margin-bottom: 40px;
 }
 
 .wrapper {

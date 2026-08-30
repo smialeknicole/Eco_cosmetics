@@ -1,25 +1,51 @@
 .footer {
-  grid-column: 1/-1;
+  padding: 30px 20px;
+  background-color: $primairly-color;
 
   &__link {
     grid-column: 1/-1;
+    color: $beige;
     text-decoration: none;
   }
 
-  &__icon {
+  &__icons {
+    display: flex;
     grid-column: 1/-1;
+    gap: 20px;
+
     width: 20px;
     height: 20px;
+    margin-bottom: 40px;
   }
 
-  &__address {
+  &__addres {
     grid-column: 1/-1;
+    color: $beige;
+    text-decoration: none;
+  }
+
+  &__addressline {
+    display: flex;
+    grid-column: 1/-1;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+
+    color: $beige;
     text-decoration: none;
   }
 
   &__end {
     grid-column: 1/-1;
     justify-self: center;
+
+    color: $beige;
+    text-align: center;
     text-decoration: none;
+    text-transform: none;
+  }
+
+  .wrapper {
+    margin-bottom: 40px;
   }
 }

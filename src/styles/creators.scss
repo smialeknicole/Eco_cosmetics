@@ -1,13 +1,21 @@
 .creators {
   grid-column: 1/-1;
 
-  h4,
-  p,
-  a {
+  &__title {
     grid-column: 1/-1;
   }
 
+  &__description {
+    grid-column: 1/-1;
+    color: $primairly-font-color;
+  }
+
   &__button {
+    grid-column: 1/-1;
+    text-decoration: none;
+  }
+
+  &__contact {
     grid-column: 1/-1;
   }
 }

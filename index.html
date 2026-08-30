@@ -7,12 +7,17 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>ECO-COSMETICS</title>
+
+    <link rel="icon" href="src/images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
     <link
       rel="stylesheet"
       href="styles.css"
     />
-
-    <link rel="icon" href="src/images/favicon.svg">
 
   </head>
 
@@ -54,7 +59,7 @@
 
       <section class="quote">
 
-        <h5>
+        <h5 class="quote__title">
           if you choose the gifts of nature
           and care about it’s - scroll down
         </h5>
@@ -63,11 +68,11 @@
 
       <section class="about wrapper">
 
-        <h4>
+        <h4 class="about__title">
           about our brand
         </h4>
 
-        <p class="text-small">
+        <p class="about__description text-small">
           Our brand cosmetics are made from
           natural ingredients and we are
           promoting them to the masses.
@@ -80,13 +85,13 @@
           recycling or reused.
         </p>
 
-        <a class="text-2" href="">learn more</a>
+        <a class="about__button text-decorative" href="#">learn more</a>
 
       </section>
 
       <section class="shop wrapper">
 
-        <h4>
+        <h4 class="shop__title">
           shop
         </h4>
 
@@ -98,25 +103,27 @@
         </div>
 
         <div class="shop__image"></div>
-        <h5 class="shop__name">Hydrophilic oil</h5>
-        <p class="shop__price text-3">160 UAH</p>
+        <div class="shop__productinfo">
+          <h5 class="shop__name">Hydrophilic oil</h5>
+          <p class="shop__price text-3">160 UAH</p>
+        </div>
 
         <button class="button">All products</button>
       </section>
 
       <section class="creators wrapper">
-        <h4>
+        <h4 class="creators__title">
           about the creators
         </h4>
 
-        <p class="text-small">
+        <p class="creators__description text-small">
           My name is Victoria, I’m a master at
           candle making and natural cosmetics.
           In the past, a cynologist, was engaged
           in herbs, made layouts on the Tarot.
         </p>
 
-        <p class="text-small">
+        <p class="creators__description text-small">
           I am also a volunteer to save wild birds
           in distress, a consultant to the Phoenix
           Wildlife Rehabilitation Center, a member
@@ -125,14 +132,14 @@
           International.
         </p>
 
-        <a class="text-2" href="">learn more</a>
-        <button class="button creators__button">To contact us</button>
+        <a class="creators__button text-decorative" href="#">learn more</a>
+        <button class="button creators__contact">To contact us</button>
 
       </section>
 
-      <h4>Ayurvedic Tooth Powder</h4>
-
       <section class="features wrapper">
+
+        <h4 class="features__title">Ayurvedic Tooth Powder</h4>
 
         <img
           class="features__image"
@@ -140,30 +147,34 @@
           alt="product composition"
         >
 
-        <a class="text-2" href="">learn more</a>
+        <a class="features__button text-decorative" href="#">learn more</a>
 
-        <img
+        <div class="features__icons">
+
+          <img
           class="features__icon"
           src="src/images/icon_1.png"
           alt=" "
         >
-        <p class="text-2">No synthetics and microplastics</p>
+          <p class="features__icontitle text-2">No synthetics and microplastics</p>
 
-        <img
-          class="features__icon"
-          src="src/images/icon_2.png"
-          alt=" "
-        >
+          <img
+            class="features__icon"
+            src="src/images/icon_2.png"
+            alt=" "
+          >
 
-        <p class="text-2">product packaging can be recycled or reused</p>
+          <p class="features__icontitle text-2">product packaging can be recycled or reused</p>
 
-        <img
-          class="features__icon"
-          src="src/images/icon_3.png"
-          alt=" "
-        >
+          <img
+            class="features__icon"
+            src="src/images/icon_3.png"
+            alt=" "
+          >
 
-        <p class="text-2">only natural ingredients</p>
+          <p class="features__icontitle text-2">only natural ingredients</p>
+
+        </div>
 
       </section>
 
@@ -182,18 +193,18 @@
           <div class="contact__input-wrapper">
             <label class="contact__label" for="name">Name</label>
             <input
-              class="contact__input"
+              class="contact__input text-small"
               type="text"
               id="name"
               name="name"
-              placeholder="Name"
+              placeholder="Your name"
             >
           </div>
 
           <div class="contact__input-wrapper">
             <label class="contact__label" for="email">E-mail</label>
             <input
-              class="contact__input"
+              class="contact__input text-small"
               type="email"
               id="email"
               name="email"
@@ -204,7 +215,7 @@
           <div class="contact__input-wrapper">
             <label class="contact__label" for="phone">Phone number</label>
             <input
-              class="contact__input"
+              class="contact__input text-small"
               type="tel"
               id="phone"
               name="phone"
@@ -227,32 +238,44 @@
 
       </section>
 
-      <section class="footer wrapper">
+    </main>
+
+    <section class="footer">
+
+      <div class="wrapper">
+
         <a class="footer__link text-menu" href="#shop">Shop</a>
         <a class="footer__link text-menu" href="#contact">Contact</a>
         <a class="footer__link text-menu" href="#about">About</a>
 
-        <a class="footer__icon" href="#">
-          <img src="src/images/facebook_icon_mobile.svg">
-        </a>
+        <div class="footer__icons">
+          <a class="footer__icon" href="#">
+            <img src="src/images/facebook_icon_mobile.svg" alt="Facebook"></a>
+          <a class="footer__icon" href="#">
+            <img src="src/images/instagram_icon_mobile.svg" alt="Instagram"></a>
 
-        <a class="footer__icon" href="#">
-          <img src="src/images/instagram_icon_mobile.svg">
-        </a>
 
-        <a class="footer__address text-small" href="#shop">Ukraine</a>
-        <a class="footer__address text-small" href="#contact">support.mountain@gmail.com</a>
-        <a class="footer__address text-small" href="#about">+380934476839</a>
-        <a class="footer__address text-small" href="#about">Support is available Monday - Friday 9am-6pm</a>
+        </div>
+
+        <div class="footer__addres">
+          <a class="footer__addressline text-small" href="#shop">Ukraine</a>
+          <a class="footer__addressline text-small" href="mailto:support.mountain@gmail.com">support.mountain@gmail.com</a>
+          <a class="footer__addressline text-small" href="tel:+38 093 447 68 39">+38 093 447 68 39</a>
+          <a class="footer__addressline text-small" href="#about">Support is available Monday - Friday<br>9am-6pm</a>
+        </div>
+
 
         <span class="footer__end text-decorative">
-          2019 witch of mountain winds
+          &copy; 2019 witch of mountain<br>winds
         </span>
 
+      </div>
 
-      </section>
 
-    </main>
+
+    </section>
+
+
     <script type="module" src="src/scripts/main.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 @use '../styles/utils/mixins';
 
 .shop {
-  h4 {
+  &__title {
     grid-column: 1/-1;
     justify-self: center;
   }
@@ -11,6 +11,10 @@
     grid-column: 1 / -1;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 34px;
+  }
+
+  &__cat {
+    color: $gray-5;
   }
 
   &__image {
@@ -27,12 +31,12 @@
     background-size: cover;
   }
 
-  &__name {
+  &__productinfo {
     grid-column: 1 / -1;
   }
 
-  &__price {
-    grid-column: 1 / -1;
+  &__name {
+    margin-bottom: 10px;
   }
   .button {
     grid-column: 1 / -1;
