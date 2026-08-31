@@ -538,6 +538,65 @@ button {
   padding: 0 20px;
 }
 
+.menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(-100%);
+  overflow: auto;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #333;
+  transition: 0.7s ease-in-out;
+}
+.menu:target {
+  transform: translateX(0);
+}
+.menu__close {
+  width: 15px;
+  height: 15px;
+  border: 0;
+  color: #e4dfd3;
+  background-color: transparent;
+  background-image: url(src/images/close__mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.menu__closelabel {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+.menu__links {
+  grid-column: 1/-1;
+}
+.menu__list {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  height: auto;
+}
+.menu__item {
+  grid-column: 1/-1;
+  justify-self: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bdbdbd;
+  text-align: center;
+}
+.menu__link {
+  color: #e4dfd3;
+  text-decoration: none;
+}
+
 body {
   background: #e4dfd3;
 }
