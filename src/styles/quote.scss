@@ -1,7 +1,15 @@
 .quote {
-  margin: 100px 0;
-
   &__title {
+    grid-column: 1/-1;
     color: $secondary-color;
+  }
+
+  @include tablet {
+    &__title {
+      grid-column: 3/5;
+      margin-right: -20px;
+      margin-left: -20px;
+      text-align: center;
+    }
   }
 }

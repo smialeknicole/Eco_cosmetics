@@ -70,21 +70,25 @@
 
     </div>
 
-    <div class="hero"></div>
-
     <main class="content">
 
-      <h1>
+      <div class="hero"></div>
+
+      <div class="hero__components wrapper">
+
+        <h1 class="hero__title">
         Brand of eco-<br>cosmetics and magic candles
-      </h1>
+        </h1>
 
-      <p class="text">
-        20% of sales at a wild bird shelter
-      </p>
+        <p class="hero__description text">
+          20% of sales at a wild bird shelter
+        </p>
 
-      <button class="button">Shop</button>
+        <button class="button hero__buttonshop">Shop</button>
 
-      <section class="quote">
+      </div>
+
+      <section class="quote wrapper">
 
         <h5 class="quote__title">
           if you choose the gifts of nature
@@ -112,6 +116,8 @@
           recycling or reused.
         </p>
 
+        <div class="about__image"></div>
+
         <a class="about__button text-decorative" href="#">learn more</a>
 
       </section>
@@ -129,35 +135,54 @@
           <a class="shop__cat text-2" href="#candles">candles</a>
         </div>
 
-        <div class="shop__image"></div>
-        <div class="shop__productinfo">
+        <div class="shop__product shop__product-first">
+
+          <div class="shop__image">
+            <img src="src/images/shop_picture1_tablet.jpg" alt="Hydrophilic oil">
+          </div>
           <h5 class="shop__name">Hydrophilic oil</h5>
           <p class="shop__price text-3">160 UAH</p>
         </div>
 
-        <button class="button">All products</button>
+        <div class="shop__product shop__product-second">
+          <div class="shop__image">
+            <img src="src/images/shop_picture2_tablet.jpg" alt="Ubtan">
+          </div>
+          <h5 class="shop__name">Ubtan</h5>
+          <p class="shop__price text-3">160 UAH</p>
+        </div>
+
+
+        <button class="button shop__button">All products</button>
+
       </section>
 
       <section class="creators wrapper" id="creators">
         <h4 class="creators__title">
           about the creators
         </h4>
+        <div class="creators__description">
+          <p class="creators__description-text text-small">
+            My name is Victoria, I’m a master at
+            candle making and natural cosmetics.
+            In the past, a cynologist, was engaged
+            in herbs, made layouts on the Tarot.
+          </p>
+          <br>
+          <p class="creators__description-text text-small">
+            I am also a volunteer to save wild birds
+            in distress, a consultant to the Phoenix
+            Wildlife Rehabilitation Center, a member
+            of the Society for the Conservation of
+            Birds of Ukraine with the support of Birdlife
+            International.
+          </p>
 
-        <p class="creators__description text-small">
-          My name is Victoria, I’m a master at
-          candle making and natural cosmetics.
-          In the past, a cynologist, was engaged
-          in herbs, made layouts on the Tarot.
-        </p>
+        </div>
 
-        <p class="creators__description text-small">
-          I am also a volunteer to save wild birds
-          in distress, a consultant to the Phoenix
-          Wildlife Rehabilitation Center, a member
-          of the Society for the Conservation of
-          Birds of Ukraine with the support of Birdlife
-          International.
-        </p>
+        <div class="creators__image">
+          <img src="src/images/creators__tablet.jpg" alt="Creators Image">
+        </div>
 
         <a class="creators__button text-decorative" href="#">learn more</a>
         <button class="button creators__contact">To contact us</button>
