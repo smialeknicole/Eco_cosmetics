@@ -116,7 +116,9 @@
           recycling or reused.
         </p>
 
-        <div class="about__image"></div>
+        <div class="about__image">
+          <img src="src/images/about_tablet.jpg">
+        </div>
 
         <a class="about__button text-decorative" href="#">learn more</a>
 
@@ -151,7 +153,6 @@
           <h5 class="shop__name">Ubtan</h5>
           <p class="shop__price text-3">160 UAH</p>
         </div>
-
 
         <button class="button shop__button">All products</button>
 
@@ -192,42 +193,42 @@
       <section class="features wrapper" id="features">
 
         <h4 class="features__title">Ayurvedic Tooth Powder</h4>
-
-        <img
-          class="features__image"
-          src="src/images/features_mobile.png"
-          alt="product composition"
-        >
-
+        <div class="features__image"></div>
         <a class="features__button text-decorative" href="#">learn more</a>
 
-        <div class="features__icons">
+        <div class="features__icons wrapper">
 
-          <img
-          class="features__icon"
-          src="src/images/icon_1.png"
-          alt=" "
-        >
-          <p class="features__icontitle text-2">No synthetics and microplastics</p>
+          <div class="features__item">
 
-          <img
+            <img
+              class="features__icon"
+              src="src/images/icon_1.png"
+              alt=" "
+              >
+            <p class="features__icontitle text-2">No synthetics and microplastics</p>
+
+          </div>
+
+          <div class="features__item">
+            <img
             class="features__icon"
             src="src/images/icon_2.png"
             alt=" "
           >
+            <p class="features__icontitle text-2">product packaging can be recycled or reused</p>
 
-          <p class="features__icontitle text-2">product packaging can be recycled or reused</p>
+          </div>
 
-          <img
-            class="features__icon"
-            src="src/images/icon_3.png"
-            alt=" "
-          >
-
-          <p class="features__icontitle text-2">only natural ingredients</p>
+          <div class="features__item">
+            <img
+              class="features__icon"
+              src="src/images/icon_3.png"
+              alt=" "
+              >
+            <p class="features__icontitle text-2">only natural ingredients</p>
+          </div>
 
         </div>
-
       </section>
 
       <section class="contact wrapper" id="contact">
@@ -287,6 +288,10 @@
           <button class="button contact__button">Send a message</button>
 
         </form>
+
+        <div class="contact__image">
+          <img src="src/images/contact_tablet.jpg">
+        </div>
 
       </section>
 

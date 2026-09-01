@@ -45,6 +45,7 @@
     }
 
     &__image {
+      display: grid;
       grid-column: 4/7;
       grid-row: 1/5;
 
