@@ -1,4 +1,6 @@
 .hero {
+  margin-bottom: 100px;
+
   &__picture {
     grid-column: 1/-1;
 
@@ -44,7 +46,7 @@
   @include desktop-regular {
     &__picture {
       grid-column: 7/13;
-      grid-row: 1/4;
+      grid-row: span 2;
       height: 451px;
       background-image: url('src/images/header_desktop.jpg');
     }
@@ -60,13 +62,14 @@
 
     &__description {
       grid-column: 2/6;
-      grid-row: 2;
+      grid-row: 1;
+      align-self: flex-end;
       text-align: left;
     }
 
     &__buttonshop {
       grid-column: 2/5;
-      grid-row: 3;
+      grid-row: 2;
       width: 280px;
     }
   }

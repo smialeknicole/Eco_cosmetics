@@ -1,5 +1,9 @@
 .quote {
-  margin: 0 20px 100px;
+  margin-bottom: 100px;
+
+  &__description {
+    display: none;
+  }
 
   &__title {
     grid-column: 1/-1;
@@ -9,9 +13,49 @@
   @include tablet {
     &__title {
       grid-column: 3/5;
-      margin-right: -20px;
-      margin-left: -20px;
       text-align: center;
+    }
+  }
+
+  @include desktop-regular {
+    &__description {
+      display: grid;
+      grid-column: 2/6;
+      grid-row: 2;
+      text-align: left;
+    }
+
+    &__line-top {
+      content: '';
+
+      grid-column: 1/5;
+      grid-row: 1;
+
+      width: 530px;
+      height: 1px;
+      margin-bottom: 131px;
+
+      background-color: #344f1080;
+    }
+
+    &__title {
+      grid-column: 7/11;
+      grid-row: 2;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    &__line-bottom {
+      content: '';
+
+      grid-column: 7/13;
+      grid-row: 3;
+
+      width: 630px;
+      height: 1px;
+      margin-top: 131px;
+
+      background-color: #344f1080;
     }
   }
 }

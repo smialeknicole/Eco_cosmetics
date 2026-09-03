@@ -334,6 +334,9 @@ button {
   flex-direction: column;
 }
 
+.hero {
+  margin-bottom: 100px;
+}
 .hero__picture {
   grid-column: 1/-1;
   height: 267px;
@@ -370,7 +373,7 @@ button {
 @media (min-width: 1280px) {
   .hero__picture {
     grid-column: 7/13;
-    grid-row: 1/4;
+    grid-row: span 2;
     height: 451px;
     background-image: url("src/images/header_desktop.jpg");
   }
@@ -383,18 +386,22 @@ button {
   }
   .hero__description {
     grid-column: 2/6;
-    grid-row: 2;
+    grid-row: 1;
+    align-self: flex-end;
     text-align: left;
   }
   .hero__buttonshop {
     grid-column: 2/5;
-    grid-row: 3;
+    grid-row: 2;
     width: 280px;
   }
 }
 
 .quote {
-  margin: 0 20px 100px;
+  margin-bottom: 100px;
+}
+.quote__description {
+  display: none;
 }
 .quote__title {
   grid-column: 1/-1;
@@ -403,9 +410,39 @@ button {
 @media (min-width: 768px) {
   .quote__title {
     grid-column: 3/5;
-    margin-right: -20px;
-    margin-left: -20px;
     text-align: center;
+  }
+}
+@media (min-width: 1280px) {
+  .quote__description {
+    display: grid;
+    grid-column: 2/6;
+    grid-row: 2;
+    text-align: left;
+  }
+  .quote__line-top {
+    content: "";
+    grid-column: 1/5;
+    grid-row: 1;
+    width: 530px;
+    height: 1px;
+    margin-bottom: 131px;
+    background-color: rgba(52, 79, 16, 0.5019607843);
+  }
+  .quote__title {
+    grid-column: 7/11;
+    grid-row: 2;
+    font-size: 24px;
+    text-align: left;
+  }
+  .quote__line-bottom {
+    content: "";
+    grid-column: 7/13;
+    grid-row: 3;
+    width: 630px;
+    height: 1px;
+    margin-top: 131px;
+    background-color: rgba(52, 79, 16, 0.5019607843);
   }
 }
 
