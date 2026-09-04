@@ -16,7 +16,7 @@
   }
 
   @media (min-width: 1280px) {
-    grid-template-columns: repeat(12, 80px);
+    grid-template-columns: repeat(12, 1fr);
     gap: 20px;
   }
 

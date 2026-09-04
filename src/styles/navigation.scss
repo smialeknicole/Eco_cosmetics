@@ -1,5 +1,6 @@
 .navigation {
   align-items: center;
+  margin-top: 15px;
 
   .burger {
     grid-column: 1;
@@ -42,7 +43,6 @@
   }
 
   @include desktop-regular {
-    display: grid;
     margin: 15px 0 20px;
 
     .burger {
