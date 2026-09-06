@@ -18,6 +18,10 @@
     display: none;
   }
 
+  &__description-text {
+    text-align: left;
+  }
+
   &__description-third {
     display: none;
   }
@@ -38,7 +42,7 @@
     }
 
     &__description-text {
-      margin-bottom: 15px;
+      margin-bottom: 5px;
     }
 
     &__verticallogo {
@@ -63,8 +67,8 @@
     }
 
     &__button {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 5px;
+      margin-bottom: 10px;
     }
 
     &__contact {
@@ -102,8 +106,8 @@
 
     &__description-text {
       margin-bottom: 30px;
+      font-size: 16px;
       color: $primairly-font-color;
-      text-align: left;
     }
 
     &__description-third {
@@ -118,7 +122,7 @@
 
       background-image: url('src/images/creators_desktop.jpg');
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center right;
     }
 
     &__button {

@@ -209,14 +209,14 @@
             about the creators
           </h4>
           <div class="creators__description">
-            <p class="creators__description-text text">
+            <p class="creators__description-text text-small">
               My name is Victoria, I’m a master at
               candle making and natural cosmetics.
               In the past, a cynologist, was engaged
               in herbs, made layouts on the Tarot.
             </p>
             <br>
-            <p class="creators__description-text text">
+            <p class="creators__description-text text-small">
               I am also a volunteer to save wild birds
               in distress, a consultant to the Phoenix
               Wildlife Rehabilitation Center, a member
@@ -241,11 +241,16 @@
         </div>
       </section>
 
-      <section class="features wrapper" id="features">
+      <section class="features" id="features">
 
         <h4 class="features__title">Ayurvedic Tooth Powder</h4>
-        <div class="features__image"></div>
-        <a class="features__button text-decorative" href="#">learn more</a>
+        <div class="features__verticallogo"></div>
+
+        <div class="features__container">
+          <div class="features__image"></div>
+          <a class="features__button text-decorative" href="#">learn more</a>
+        </div>
+
 
         <div class="features__icons wrapper">
 
@@ -284,65 +289,68 @@
 
       <section class="contact wrapper" id="contact">
 
-        <h4 class ="contact__title">Contact us</h4>
+        <div class="creators__verticallogo"></div>
 
-        <p class="contact__description text-small">We will help you choose
-          a product that suits you
-          and answer your other
-          questions
-        </p>
+        <div class="contact__leftcontent">
+          <h4 class ="contact__title">Contact us</h4>
 
-        <form class="contact__form">
+          <p class="contact__description text-small">We will help you choose
+            a product that suits you
+            and answer your other
+            questions
+          </p>
 
-          <div class="contact__input-wrapper">
-            <label class="contact__label" for="name">Name</label>
-            <input
-              class="contact__input text-small"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name"
-            >
-          </div>
+          <form class="contact__form">
 
-          <div class="contact__input-wrapper">
-            <label class="contact__label" for="email">E-mail</label>
-            <input
-              class="contact__input text-small"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="E-mail">
-          </div>
+            <div class="contact__input-wrapper">
+              <label class="contact__label" for="name">Name</label>
+              <input
+                class="contact__input text-small"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+              >
+            </div>
+
+            <div class="contact__input-wrapper">
+              <label class="contact__label" for="email">E-mail</label>
+              <input
+                class="contact__input text-small"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail">
+            </div>
 
 
-          <div class="contact__input-wrapper">
-            <label class="contact__label" for="phone">Phone number</label>
-            <input
-              class="contact__input text-small"
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Phone number">
-          </div>
+            <div class="contact__input-wrapper">
+              <label class="contact__label" for="phone">Phone number</label>
+              <input
+                class="contact__input text-small"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone number">
+            </div>
 
-          <div class="contact__input-wrapper">
-            <label class="contact__label" for="message">Message</label>
-            <textarea
-              class="contact__textarea text-small"
-              id="message"
-              name="message"
-              placeholder="Your Message"
-              required></textarea>
-          </div>
+            <div class="contact__input-wrapper">
+              <label class="contact__label" for="message">Message</label>
+              <textarea
+                class="contact__textarea text-small"
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required></textarea>
+            </div>
 
-          <button class="button contact__button">Send a message</button>
+            <button class="button contact__button">Send a message</button>
 
-        </form>
+          </form>
 
-        <div class="contact__image">
-          <img src="src/images/contact_tablet.jpg">
         </div>
+
+        <div class="contact__image"></div>
 
       </section>
 
