@@ -923,16 +923,36 @@ button {
     background-repeat: no-repeat;
     background-position: center;
   }
+  .features__label {
+    grid-column: 7/8;
+    align-self: center;
+    margin-right: -70px;
+    text-align: right;
+  }
+  .features__label:first-of-type {
+    transform: translateY(10px);
+  }
+  .features__label:last-of-type {
+    transform: translateY(-10px);
+  }
   .features__container {
-    grid-column: 2/13;
-    align-items: space-between;
+    display: grid;
+    grid-column: 5/13;
+    grid-row: 2;
+    align-items: baseline;
+    justify-content: right;
   }
   .features__image {
+    grid-column: 10/13;
+    grid-row: 1/6;
     width: 580px;
     height: 397px;
     background-image: url("src/images/features_desktop.svg");
   }
   .features__button {
+    grid-column: 2/4;
+    grid-row: 2;
+    align-self: end;
     margin: 0;
   }
   .features__icons {

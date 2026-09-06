@@ -115,18 +115,43 @@
       background-position: center;
     }
 
+    &__label {
+      grid-column: 7/8;
+      align-self: center;
+      margin-right: -70px;
+      text-align: right;
+    }
+
+    &__label:first-of-type {
+      transform: translateY(10px);
+    }
+
+    &__label:last-of-type {
+      transform: translateY(-10px);
+    }
+
     &__container {
-      grid-column: 2/13;
-      align-items: space-between;
+      display: grid;
+      grid-column: 5/13;
+      grid-row: 2;
+      align-items: baseline;
+      justify-content: right;
     }
 
     &__image {
+      grid-column: 10/13;
+      grid-row: 1/6;
+
       width: 580px;
       height: 397px;
+
       background-image: url('src/images/features_desktop.svg');
     }
 
     &__button {
+      grid-column: 2/4;
+      grid-row: 2;
+      align-self: end;
       margin: 0;
     }
 
