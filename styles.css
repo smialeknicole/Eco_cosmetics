@@ -606,10 +606,7 @@ button {
   display: none;
 }
 .shop__name {
-  margin: 20px 20px 10px;
-}
-.shop__price {
-  margin: 0 20px;
+  margin: 20px 0 10px;
 }
 .shop__button {
   grid-column: 1/-1;
@@ -637,15 +634,11 @@ button {
     width: 342px;
     height: 300px;
     background-image: url("src/images/shop_picture1_tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .shop__image-second {
     width: 342px;
     height: 300px;
     background-image: url("src/images/shop_picture2_tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .shop__button {
     grid-column: 3/5;
@@ -673,8 +666,8 @@ button {
     gap: 14px;
     justify-self: left;
   }
-  .shop__product {
-    grid-column: 2/7;
+  .shop__product-first {
+    grid-column: 2/8;
     grid-row: 3;
   }
   .shop__product-second {
@@ -682,18 +675,18 @@ button {
     grid-row: 3;
   }
   .shop__image-first {
-    width: 530px;
+    width: 100%;
     height: 500px;
     background-image: url("src/images/shop_desktop_1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
+    background-size: cover;
   }
   .shop__image-second {
-    width: 530px;
+    width: 100%;
     height: 500px;
     background-image: url("src/images/shop_desktop_2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
+    background-size: cover;
   }
   .shop__button {
     grid-column: 3/12;

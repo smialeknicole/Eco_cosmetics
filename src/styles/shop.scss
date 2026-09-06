@@ -37,11 +37,7 @@
   }
 
   &__name {
-    margin: 20px 20px 10px;
-  }
-
-  &__price {
-    margin: 0 20px;
+    margin: 20px 0 10px;
   }
 
   &__button {
@@ -75,25 +71,14 @@
     &__image-first {
       width: 342px;
       height: 300px;
-
       background-image: url('src/images/shop_picture1_tablet.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
     }
 
     &__image-second {
       width: 342px;
       height: 300px;
-
       background-image: url('src/images/shop_picture2_tablet.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
     }
-
-    // &__image img {
-    //   width: 100%;
-    //   height: 100%;
-    // }
 
     &__button {
       grid-column: 3/5;
@@ -127,8 +112,8 @@
       justify-self: left;
     }
 
-    &__product {
-      grid-column: 2/7;
+    &__product-first {
+      grid-column: 2/8;
       grid-row: 3;
     }
 
@@ -138,21 +123,21 @@
     }
 
     &__image-first {
-      width: 530px;
+      width: 100%;
       height: 500px;
 
       background-image: url('src/images/shop_desktop_1.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
+      background-position: left;
+      background-size: cover;
     }
 
     &__image-second {
-      width: 530px;
+      width: 100%;
       height: 500px;
 
       background-image: url('src/images/shop_desktop_2.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
+      background-position: left;
+      background-size: cover;
     }
 
     &__button {
