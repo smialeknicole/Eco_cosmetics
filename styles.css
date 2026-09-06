@@ -442,9 +442,10 @@ button {
     content: "";
     grid-column: 1/5;
     grid-row: 1;
-    width: 530px;
+    width: 550px;
     height: 1px;
     margin-bottom: 131px;
+    margin-left: -20px;
     background-color: rgba(52, 79, 16, 0.5019607843);
   }
   .quote__title {
@@ -457,9 +458,10 @@ button {
     content: "";
     grid-column: 7/13;
     grid-row: 3;
-    width: 630px;
+    width: 650px;
     height: 1px;
     margin-top: 131px;
+    margin-left: 20px;
     background-color: rgba(52, 79, 16, 0.5019607843);
   }
 }
