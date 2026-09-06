@@ -79,4 +79,25 @@
       justify-self: flex-start;
     }
   }
+
+  @include desktop-regular {
+    &__list {
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    &__icons {
+      grid-column: 8/12;
+      grid-row: 2;
+    }
+
+    &__addres {
+      grid-column: 8 / 12;
+    }
+
+    &__end {
+      grid-column: 1/7;
+      justify-self: flex-start;
+    }
+  }
 }

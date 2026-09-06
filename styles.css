@@ -1128,6 +1128,23 @@ button {
     justify-self: flex-start;
   }
 }
+@media (min-width: 1280px) {
+  .footer__list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .footer__icons {
+    grid-column: 8/12;
+    grid-row: 2;
+  }
+  .footer__addres {
+    grid-column: 8/12;
+  }
+  .footer__end {
+    grid-column: 1/7;
+    justify-self: flex-start;
+  }
+}
 
 .wrapper {
   display: grid;
