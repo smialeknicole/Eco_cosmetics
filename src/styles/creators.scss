@@ -30,6 +30,8 @@
   }
 
   @include tablet {
+    margin-bottom: 139px;
+
     &__leftcontent {
       display: flex;
       grid-column: 1/4;
@@ -74,6 +76,8 @@
   }
 
   @include desktop-regular {
+    margin-bottom: 200px;
+
     &__leftcontent {
       display: flex;
       grid-column: 2/6;

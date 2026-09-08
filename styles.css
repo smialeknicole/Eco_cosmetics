@@ -384,6 +384,7 @@ button {
 @media (min-width: 768px) {
   .hero {
     margin-right: 27px;
+    margin-bottom: 130px;
     margin-left: 27px;
   }
   .hero__picture-mobile {
@@ -402,6 +403,7 @@ button {
 @media (min-width: 1280px) {
   .hero {
     margin-right: 50px;
+    margin-bottom: 200px;
     margin-left: 50px;
   }
   .hero__picture-mobile {
@@ -452,12 +454,18 @@ button {
   color: #344f10;
 }
 @media (min-width: 768px) {
+  .quote {
+    margin-bottom: 130px;
+  }
   .quote__title {
     grid-column: 3/5;
     text-align: center;
   }
 }
 @media (min-width: 1280px) {
+  .quote {
+    margin-bottom: 200px;
+  }
   .quote__description {
     display: grid;
     grid-column: 2/6;
@@ -529,6 +537,7 @@ button {
 }
 @media (min-width: 768px) {
   .about {
+    margin-bottom: 130px;
     margin-left: 27px;
     margin-rigt: 27px;
   }
@@ -625,6 +634,7 @@ button {
 @media (min-width: 1440px) {
   .about {
     margin-right: 130px;
+    margin-bottom: 200px;
     margin-left: 130px;
   }
   .about__image-1 {
@@ -798,6 +808,9 @@ button {
   text-decoration: none;
 }
 @media (min-width: 768px) {
+  .creators {
+    margin-bottom: 139px;
+  }
   .creators__leftcontent {
     display: flex;
     grid-column: 1/4;
@@ -833,6 +846,9 @@ button {
   }
 }
 @media (min-width: 1280px) {
+  .creators {
+    margin-bottom: 200px;
+  }
   .creators__leftcontent {
     display: flex;
     grid-column: 2/6;
@@ -1142,6 +1158,9 @@ button {
   width: 100%;
 }
 @media (min-width: 768px) {
+  .contact {
+    margin-bottom: 130px;
+  }
   .contact__leftcontent {
     grid-column: 1/5;
     grid-row: 1;

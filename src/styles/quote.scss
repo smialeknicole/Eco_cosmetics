@@ -11,6 +11,8 @@
   }
 
   @include tablet {
+    margin-bottom: 130px;
+
     &__title {
       grid-column: 3/5;
       text-align: center;
@@ -18,6 +20,8 @@
   }
 
   @include desktop-regular {
+    margin-bottom: 200px;
+
     &__description {
       display: grid;
       grid-column: 2/6;

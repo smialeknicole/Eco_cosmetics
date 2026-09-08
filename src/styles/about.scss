@@ -26,6 +26,7 @@
   }
 
   @include tablet {
+    margin-bottom: 130px;
     margin-left: $tablet-margin;
 
     margin-rigt: $tablet-margin;
@@ -145,6 +146,7 @@
 
   @include desktop-large {
     margin-right: $large-margin;
+    margin-bottom: 200px;
     margin-left: $large-margin;
 
     &__image-1 {
