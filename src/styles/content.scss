@@ -1,3 +1,6 @@
 .content {
-  // padding: 0 20px;
+  @mixin desktop-large {
+    margin-right: $large-margin;
+    margin-left: $large-margin;
+  }
 }

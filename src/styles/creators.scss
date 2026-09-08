@@ -1,10 +1,7 @@
 .creators {
   display: grid;
   grid-column: 1/-1;
-
-  margin-right: 20px;
-  margin-bottom: 100px;
-  margin-left: 20px;
+  margin: 0 $regular-margin 100px;
 
   &__leftcontent {
     display: flex;
@@ -129,5 +126,10 @@
       margin-top: 45px;
       text-decoration: none;
     }
+  }
+
+  @include desktop-large {
+    margin-right: $large-margin;
+    margin-left: $large-margin;
   }
 }

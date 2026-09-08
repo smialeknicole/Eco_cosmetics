@@ -1,7 +1,7 @@
 .hero {
-  margin-right: 20px;
+  margin-right: $mobile-margin;
   margin-bottom: 100px;
-  margin-left: 20px;
+  margin-left: $mobile-margin;
 
   &__picture-mobile {
     grid-column: 1/-1;
@@ -30,6 +30,9 @@
   }
 
   @include tablet {
+    margin-right: $tablet-margin;
+    margin-left: $tablet-margin;
+
     &__picture-mobile {
       height: 500px;
       background-image: url('src/images/header_tablet.jpg');
@@ -47,6 +50,9 @@
   }
 
   @include desktop-regular {
+    margin-right: $regular-margin;
+    margin-left: $regular-margin;
+
     &__picture-mobile {
       display: none;
     }
@@ -83,5 +89,10 @@
       width: 280px;
       margin: 0;
     }
+  }
+
+  @include desktop-large {
+    margin-right: $large-margin;
+    margin-left: $large-margin;
   }
 }

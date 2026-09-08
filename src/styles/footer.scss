@@ -57,6 +57,8 @@
   }
 
   @include tablet {
+    padding: 29px 27px;
+
     &__list {
       display: flex;
       grid-column: 1/4;
@@ -81,6 +83,8 @@
   }
 
   @include desktop-regular {
+    padding: 60px 50px;
+
     &__list {
       flex-direction: row;
       gap: 40px;
@@ -99,5 +103,9 @@
       grid-column: 1/7;
       justify-self: flex-start;
     }
+  }
+
+  @include desktop-large {
+    padding: 60px 130px;
   }
 }

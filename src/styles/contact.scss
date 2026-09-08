@@ -1,6 +1,6 @@
 .contact {
   grid-column: 1/-1;
-  margin: 0 20px 100px;
+  margin: 0 $regular-margin 100px;
 
   &__leftcontent {
     grid-column: 1/-1;
@@ -134,5 +134,10 @@
     &__button {
       width: 280px;
     }
+  }
+
+  @include desktop-large {
+    margin-right: $large-margin;
+    margin-left: $large-margin;
   }
 }

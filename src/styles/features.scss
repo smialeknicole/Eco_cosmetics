@@ -4,13 +4,13 @@
   margin-bottom: 100px;
 
   &__title {
-    margin-left: 20px;
+    margin-left: $regular-margin;
   }
 
   &__container {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: $regular-margin;
   }
 
   &__label {
@@ -50,7 +50,7 @@
 
   &__button {
     grid-column: 1/-1;
-    margin-left: 20px;
+    margin-left: $regular-margin;
     text-decoration: none;
   }
 
@@ -110,8 +110,8 @@
   @include desktop-regular {
     @include grid;
 
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: $regular-margin;
+    margin-left: $regular-margin;
 
     &__title {
       grid-column: 2/5;
@@ -189,5 +189,10 @@
     &__icontitle {
       grid-column: span 2;
     }
+  }
+
+  @include desktop-large {
+    margin-right: $large-margin;
+    margin-left: $large-margin;
   }
 }

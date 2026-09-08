@@ -1,7 +1,7 @@
 .shop {
-  margin-right: 20px;
+  margin-right: $mobile-margin;
   margin-bottom: 100px;
-  margin-left: 20px;
+  margin-left: $mobile-margin;
 
   &__title {
     grid-column: 1/-1;
@@ -22,7 +22,7 @@
   &__image-first {
     width: 320px;
     height: 267px;
-    margin-left: -20px;
+    margin-left: -($mobile-margin);
 
     background-image: url('src/images/shopimage_mobile.jpg');
     background-repeat: no-repeat;
@@ -43,10 +43,14 @@
 
   &__button {
     grid-column: 1 / -1;
-    margin: 0 20px;
+    margin: 0 $mobile-margin;
   }
 
   @include tablet {
+    margin-right: $tablet-margin;
+    margin-bottom: 200px;
+    margin-left: $tablet-margin;
+
     &__verticallogo {
       display: none;
     }
@@ -89,6 +93,9 @@
   }
 
   @include desktop-regular {
+    margin-right: $regular-margin;
+    margin-left: $regular-margin;
+
     &__title {
       grid-column: 2/-1;
       justify-self: start;
@@ -139,7 +146,7 @@
       height: 500px;
 
       background-image: url('src/images/shop_desktop_2.jpg');
-      background-position: left;
+      background-repeat: no-repeat;
       background-size: cover;
     }
 
@@ -148,5 +155,10 @@
       justify-self: center;
       width: 280px;
     }
+  }
+
+  @include desktop-large {
+    margin-right: $large-margin;
+    margin-left: $large-margin;
   }
 }

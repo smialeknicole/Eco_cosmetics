@@ -2,17 +2,24 @@
   display: flex;
   flex-direction: column;
 
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-right: $mobile-margin;
+  margin-bottom: 30px;
+  margin-left: $mobile-margin;
 
   @include tablet {
-    margin-top: 32px;
+    margin-top: 23px;
     margin-bottom: 30px;
+    margin-left: $tablet-margin;
+
+    margin-rigt: $tablet-margin;
   }
 
   @include desktop-regular {
-    margin-top: 52px;
-    margin-bottom: 80px;
+    margin: 52px $regular-margin 80px;
+  }
+
+  @include desktop-large {
+    margin-right: $large-margin;
+    margin-left: $large-margin;
   }
 }

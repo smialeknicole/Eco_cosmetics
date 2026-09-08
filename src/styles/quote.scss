@@ -1,5 +1,5 @@
 .quote {
-  margin: 0 20px 100px;
+  margin: 0 $regular-margin 100px;
 
   &__description {
     display: none;
@@ -34,7 +34,7 @@
       width: 550px;
       height: 1px;
       margin-bottom: 131px;
-      margin-left: -20px;
+      margin-left: -($regular-margin);
 
       background-color: #344f1080;
     }
@@ -52,12 +52,26 @@
       grid-column: 7/13;
       grid-row: 3;
 
-      width: 650px;
+      width: calc(630px + $regular-margin);
       height: 1px;
       margin-top: 131px;
-      margin-left: 20px;
+      margin-left: 0;
 
       background-color: #344f1080;
+    }
+  }
+
+  @include desktop-large {
+    margin: 0 $large-margin 100px;
+
+    &__line-top {
+      width: 610px;
+      margin-left: -$large-margin;
+    }
+
+    &__line-bottom {
+      width: 711px;
+      margin-left: 0;
     }
   }
 }

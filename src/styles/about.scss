@@ -1,6 +1,6 @@
 .about {
   grid-column: 1/-1;
-  margin: 0 20px 100px;
+  margin: 0 $regular-margin 100px;
 
   &__title {
     grid-column: 1/-1;
@@ -26,6 +26,10 @@
   }
 
   @include tablet {
+    margin-left: $tablet-margin;
+
+    margin-rigt: $tablet-margin;
+
     &__title {
       grid-column: 1/-1;
       grid-row: 1;
@@ -64,6 +68,10 @@
   }
 
   @include desktop-regular {
+    margin-left: $regular-margin;
+
+    margin-rigt: $regular-margin;
+
     &__title {
       grid-column: 2/8;
       grid-row: 1;
@@ -132,6 +140,15 @@
       grid-column: 2/6;
       grid-row: 4;
       text-decoration: none;
+    }
+  }
+
+  @include desktop-large {
+    margin-right: $large-margin;
+    margin-left: $large-margin;
+
+    &__image-1 {
+      grid-column: 8;
     }
   }
 }
