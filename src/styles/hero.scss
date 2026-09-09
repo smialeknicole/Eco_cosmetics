@@ -35,8 +35,17 @@
     margin-left: $tablet-margin;
 
     &__picture-mobile {
-      height: 500px;
+      display: none;
+    }
+
+    &__picture {
+      grid-column: 1/-1;
+      grid-row: span 2;
+
+      height: 451px;
+
       background-image: url('src/images/header_tablet.jpg');
+      background-repeat: no-repeat;
     }
 
     &__title {
@@ -55,18 +64,11 @@
     margin-bottom: 200px;
     margin-left: $regular-margin;
 
-    &__picture-mobile {
-      display: none;
-    }
-
     &__picture {
       grid-column: 7/13;
       grid-row: span 2;
-
       height: 451px;
-
       background-image: url('src/images/header_desktop.jpg');
-      background-repeat: no-repeat;
     }
 
     &__title {

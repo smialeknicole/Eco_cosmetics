@@ -72,6 +72,7 @@
       grid-column: 1/4;
       grid-row: 1;
       align-self: start;
+      margin-left: $tablet-margin;
     }
 
     &__container {
@@ -93,13 +94,14 @@
     &__button {
       grid-row: 1;
       align-self: end;
+      margin-left: $tablet-margin;
       text-decoration: none;
     }
 
     &__icons {
       grid-column: 1/-1;
-      margin-top: 121px;
-      margin-bottom: 130px;
+
+      margin: 121px $tablet-margin 130px;
     }
 
     &__icontitle {
@@ -173,7 +175,14 @@
       grid-column: 2/4;
       grid-row: 2;
       align-self: end;
+
+      width: fit-content;
       margin: 0;
+      padding-bottom: 10px;
+
+      &:hover {
+        border-bottom: 1px solid $secondary-color;
+      }
     }
 
     &__icons {

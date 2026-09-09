@@ -11,7 +11,9 @@
   }
 
   @include tablet {
+    margin-right: $tablet-margin;
     margin-bottom: 130px;
+    margin-left: $tablet-margin;
 
     &__title {
       grid-column: 3/5;
@@ -20,7 +22,9 @@
   }
 
   @include desktop-regular {
+    margin-right: $regular-margin;
     margin-bottom: 200px;
+    margin-left: $regular-margin;
 
     &__description {
       display: grid;

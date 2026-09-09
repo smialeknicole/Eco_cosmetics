@@ -8,4 +8,10 @@
 
   opacity: 1;
   background-color: $primairly-font-color;
+
+  &:hover {
+    border: 1px solid $primairly-font-color;
+    color: $primairly-font-color;
+    background-color: $beige;
+  }
 }

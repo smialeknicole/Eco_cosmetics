@@ -111,14 +111,22 @@
       height: 145px;
 
       background-image: url('src/images/vertical_shop.svg');
-      background-repeat: no-repeat;
-      background-position: center;
     }
 
     &__list {
       grid-column: 2/-1;
       gap: 14px;
       justify-self: left;
+    }
+
+    &__cat {
+      padding-bottom: 20px;
+
+      &:hover {
+        border-bottom: 1px solid $primairly-font-color;
+        font-weight: 500;
+        color: $primairly-font-color;
+      }
     }
 
     &__product-first {

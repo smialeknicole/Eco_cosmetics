@@ -17,6 +17,10 @@
     display: none;
   }
 
+  &__description {
+    margin-bottom: 30px;
+  }
+
   &__input {
     box-sizing: border-box;
     width: 100%;
@@ -65,11 +69,17 @@
   }
 
   @include tablet {
+    margin-right: $tablet-margin;
     margin-bottom: 130px;
+    margin-left: $tablet-margin;
 
     &__leftcontent {
       grid-column: 1/5;
       grid-row: 1;
+    }
+
+    &__description {
+      margin-bottom: 20px;
     }
 
     &__image {
@@ -112,6 +122,10 @@
     &__leftcontent {
       grid-column: 2/6;
       grid-row: 1;
+    }
+
+    &__description {
+      margin-bottom: 40px;
     }
 
     &__image {

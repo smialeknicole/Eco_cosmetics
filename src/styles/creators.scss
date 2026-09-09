@@ -30,7 +30,9 @@
   }
 
   @include tablet {
+    margin-right: $tablet-margin;
     margin-bottom: 139px;
+    margin-left: $tablet-margin;
 
     &__leftcontent {
       display: flex;
@@ -76,7 +78,9 @@
   }
 
   @include desktop-regular {
+    margin-right: $regular-margin;
     margin-bottom: 200px;
+    margin-left: $regular-margin;
 
     &__leftcontent {
       display: flex;
@@ -127,8 +131,14 @@
     }
 
     &__button {
-      margin-top: 45px;
+      width: fit-content;
+      margin-top: 15px;
+      padding-bottom: 10px;
       text-decoration: none;
+
+      &:hover {
+        border-bottom: 1px solid $secondary-color;
+      }
     }
   }
 
