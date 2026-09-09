@@ -25,27 +25,31 @@
     box-sizing: border-box;
     width: 100%;
     height: 48px;
-    border: 1px solid transparent;
+    border: none;
+    border-bottom: 1px solid $gray-3;
 
     line-height: 150%;
 
     background-color: transparent;
-  }
+    outline: none;
 
-  &__input-wrapper {
-    position: relative;
+    &::placeholder {
+      color: $gray-2;
+    }
 
-    &::after {
-      content: ' ';
+    &:focus {
+      border-bottom-color: $primairly-font-color;
+      color: $gray-2;
+    }
 
-      position: absolute;
-      bottom: 0;
-      left: 0;
+    &:invalid:not(:focus) {
+      border-bottom-color: red;
+      color: red;
+    }
 
-      width: 100%;
-      height: 1px;
-
-      background: $gray-3;
+    &:valid:not(:focus, :placeholder-shown) {
+      border-bottom-color: $primairly-font-color;
+      color: $secondary-color;
     }
   }
 
@@ -56,11 +60,32 @@
     margin-top: 45px;
     margin-bottom: 0;
     padding-top: 14px;
-    border: 1px solid transparent;
+    border: none;
+    border-bottom: 1px solid $gray-3;
 
     line-height: 150%;
 
     background-color: transparent;
+    outline: none;
+
+    &::placeholder {
+      color: $gray-2;
+    }
+
+    &:focus {
+      border-bottom-color: $primairly-font-color;
+      color: $gray-2;
+    }
+
+    &:invalid:not(:focus, :placeholder-shown) {
+      border-bottom-color: red;
+      color: red;
+    }
+
+    &:valid:not(:focus, :placeholder-shown) {
+      border-bottom-color: $primairly-font-color;
+      color: $secondary-color;
+    }
   }
 
   &__button {
