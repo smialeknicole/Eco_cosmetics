@@ -64,4 +64,8 @@
     color: $beige;
     text-decoration: none;
   }
+
+  @include desktop-regular {
+    display: none;
+  }
 }

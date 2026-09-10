@@ -333,7 +333,7 @@ button {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 20px;
 }
 @media (min-width: 768px) {
@@ -653,6 +653,9 @@ button {
   margin-bottom: 100px;
   margin-left: 20px;
 }
+.shop-product {
+  margin-bottom: 20px;
+}
 .shop__title {
   grid-column: 1/-1;
   justify-self: center;
@@ -683,9 +686,22 @@ button {
 .shop__name {
   margin: 20px 0 10px;
 }
+.shop__name-product {
+  margin-top: 0;
+}
+.shop__price-product {
+  margin-bottom: 20px;
+}
 .shop__button {
   grid-column: 1/-1;
   margin: 0 20px;
+}
+.shop__button-product {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.shop__description {
+  grid-column: 1/-1;
 }
 @media (min-width: 768px) {
   .shop {
@@ -1475,6 +1491,11 @@ button {
 .menu__link {
   color: #e4dfd3;
   text-decoration: none;
+}
+@media (min-width: 1280px) {
+  .menu {
+    display: none;
+  }
 }
 
 body {
