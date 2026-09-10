@@ -1485,14 +1485,14 @@ button {
   }
 }
 
-body:has(.features:target) .hero__picture-mobile,
-body:has(.features:target) .hero,
-body:has(.features:target) .quote,
-body:has(.features:target) .about,
-body:has(.features:target) .shop,
-body:has(.features:target) .creators,
-body:has(.features:target) .features,
-body:has(.features:target) .contact {
+body:has(.product:target) .hero__picture-mobile,
+body:has(.product:target) .hero,
+body:has(.product:target) .quote,
+body:has(.product:target) .about,
+body:has(.product:target) .shop,
+body:has(.product:target) .creators,
+body:has(.product:target) .features,
+body:has(.product:target) .contact {
   display: none;
 }
 
@@ -1523,6 +1523,32 @@ body:has(.features:target) .contact {
 .product__button {
   grid-column: 1/-1;
   width: 280px;
+}
+@media (min-width: 768px) {
+  .product {
+    margin: 0 27px 20px;
+  }
+  .product__name {
+    grid-column: 2/6;
+  }
+  .product__price {
+    grid-column: 2/6;
+  }
+  .product__image {
+    grid-column: 2/6;
+    justify-self: center;
+    width: 466px;
+    height: 440px;
+    background-image: url("src/images/product_image_tablet.jpg");
+  }
+  .product__button {
+    grid-column: 2/6;
+    justify-self: center;
+    width: 280px;
+  }
+  .product__description {
+    grid-column: 2/6;
+  }
 }
 
 body {
