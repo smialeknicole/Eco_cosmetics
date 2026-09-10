@@ -1,0 +1,49 @@
+body:has(.features:target) {
+  .hero__picture-mobile,
+  .hero,
+  .quote,
+  .about,
+  .shop,
+  .creators,
+  .features,
+  .contact {
+    display: none;
+  }
+}
+
+.product {
+  display: none;
+  margin: 0 $mobile-margin 20px;
+
+  &:target {
+    display: grid;
+  }
+
+  &__name {
+    grid-column: 1/-1;
+  }
+
+  &__price {
+    grid-column: 1/-1;
+  }
+
+  &__image {
+    grid-column: span 2;
+
+    width: 280px;
+    height: 248px;
+
+    background-image: url('src/images/product_image_mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__description {
+    grid-column: 1/-1;
+  }
+
+  &__button {
+    grid-column: 1 / -1;
+    width: 280px;
+  }
+}

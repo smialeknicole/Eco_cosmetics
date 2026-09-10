@@ -45,26 +45,9 @@
     margin: 20px 0 10px;
   }
 
-  &__name-product {
-    margin-top: 0;
-  }
-
-  &__price-product {
-    margin-bottom: 20px;
-  }
-
   &__button {
     grid-column: 1 / -1;
     margin: 0 $mobile-margin;
-  }
-
-  &__button-product {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  &__description {
-    grid-column: 1/-1;
   }
 
   @include tablet {

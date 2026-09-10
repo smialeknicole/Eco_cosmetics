@@ -686,22 +686,9 @@ button {
 .shop__name {
   margin: 20px 0 10px;
 }
-.shop__name-product {
-  margin-top: 0;
-}
-.shop__price-product {
-  margin-bottom: 20px;
-}
 .shop__button {
   grid-column: 1/-1;
   margin: 0 20px;
-}
-.shop__button-product {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.shop__description {
-  grid-column: 1/-1;
 }
 @media (min-width: 768px) {
   .shop {
@@ -1496,6 +1483,46 @@ button {
   .menu {
     display: none;
   }
+}
+
+body:has(.features:target) .hero__picture-mobile,
+body:has(.features:target) .hero,
+body:has(.features:target) .quote,
+body:has(.features:target) .about,
+body:has(.features:target) .shop,
+body:has(.features:target) .creators,
+body:has(.features:target) .features,
+body:has(.features:target) .contact {
+  display: none;
+}
+
+.product {
+  display: none;
+  margin: 0 20px 20px;
+}
+.product:target {
+  display: grid;
+}
+.product__name {
+  grid-column: 1/-1;
+}
+.product__price {
+  grid-column: 1/-1;
+}
+.product__image {
+  grid-column: span 2;
+  width: 280px;
+  height: 248px;
+  background-image: url("src/images/product_image_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.product__description {
+  grid-column: 1/-1;
+}
+.product__button {
+  grid-column: 1/-1;
+  width: 280px;
 }
 
 body {
