@@ -443,7 +443,7 @@ button {
 }
 
 .quote {
-  margin: 0 50px 100px;
+  margin: 0 20px 100px;
 }
 .quote__description {
   display: none;
@@ -799,7 +799,7 @@ button {
 .creators {
   display: grid;
   grid-column: 1/-1;
-  margin: 0 50px 100px;
+  margin: 0 20px 100px;
 }
 .creators__leftcontent {
   display: flex;
@@ -1134,7 +1134,7 @@ button {
 
 .contact {
   grid-column: 1/-1;
-  margin: 0 50px 100px;
+  margin: 0 20px 100px;
 }
 .contact__leftcontent {
   grid-column: 1/-1;
