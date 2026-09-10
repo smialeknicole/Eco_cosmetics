@@ -4,13 +4,13 @@
   margin-bottom: 100px;
 
   &__title {
-    margin-left: $regular-margin;
+    margin-left: $mobile-margin;
   }
 
   &__container {
     display: flex;
     flex-direction: column;
-    margin-left: $regular-margin;
+    margin-left: $mobile-margin;
   }
 
   &__label {
@@ -50,7 +50,7 @@
 
   &__button {
     grid-column: 1/-1;
-    margin-left: $regular-margin;
+    margin-left: $mobile-margin;
     text-decoration: none;
   }
 

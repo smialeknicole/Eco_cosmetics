@@ -926,12 +926,12 @@ button {
   margin-bottom: 100px;
 }
 .features__title {
-  margin-left: 50px;
+  margin-left: 20px;
 }
 .features__container {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 .features__label {
   display: none;
@@ -963,7 +963,7 @@ button {
 }
 .features__button {
   grid-column: 1/-1;
-  margin-left: 50px;
+  margin-left: 20px;
   text-decoration: none;
 }
 .features__icontitle {
