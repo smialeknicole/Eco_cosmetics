@@ -42,7 +42,7 @@
       color: $gray-2;
     }
 
-    &:invalid:not(:focus) {
+    &:invalid:not(:focus, :placeholder-shown) {
       border-bottom-color: red;
       color: red;
     }

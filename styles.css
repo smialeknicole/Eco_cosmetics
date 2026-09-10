@@ -775,6 +775,10 @@ button {
     background-image: url("src/images/shop_desktop_1.jpg");
     background-position: left;
     background-size: cover;
+    transition: transform 0.3s ease;
+  }
+  .shop__image-first:hover {
+    transform: scale(1.03);
   }
   .shop__image-second {
     width: 100%;
@@ -782,6 +786,10 @@ button {
     background-image: url("src/images/shop_desktop_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 0.3s ease;
+  }
+  .shop__image-second:hover {
+    transform: scale(1.03);
   }
   .shop__button {
     grid-column: 3/12;
@@ -1172,7 +1180,7 @@ button {
   border-bottom-color: #333;
   color: #8e8d8c;
 }
-.contact__input:invalid:not(:focus) {
+.contact__input:invalid:not(:focus, :placeholder-shown) {
   border-bottom-color: red;
   color: red;
 }
@@ -1557,6 +1565,7 @@ body {
 
 html,
 body {
+  scroll-behavior: smooth;
   overflow-x: hidden;
   margin: 0;
   padding: 0;

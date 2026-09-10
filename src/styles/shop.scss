@@ -151,6 +151,12 @@
       background-image: url('src/images/shop_desktop_1.jpg');
       background-position: left;
       background-size: cover;
+
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.03);
+      }
     }
 
     &__image-second {
@@ -160,6 +166,12 @@
       background-image: url('src/images/shop_desktop_2.jpg');
       background-repeat: no-repeat;
       background-size: cover;
+
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.03);
+      }
     }
 
     &__button {
