@@ -9,11 +9,11 @@
 
   &__title {
     grid-column: 1/-1;
-    justify-self: center;
+    justify-self: left;
   }
 
   &__list {
-    display: grid;
+    display: flex;
     grid-column: 1 / -1;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 34px;
@@ -47,7 +47,7 @@
 
   &__button {
     grid-column: 1 / -1;
-    margin: 0 $mobile-margin;
+    width: 280px;
   }
 
   @include tablet {
@@ -61,21 +61,41 @@
 
     &__title {
       grid-column: 1/-1;
+      grid-row: 1;
       justify-self: start;
     }
 
     &__list {
+      grid-row: 2;
       gap: 14px;
       justify-self: left;
       margin-bottom: 20px;
     }
 
-    &__product-second {
-      display: grid;
+    &__slider {
+      scrollbar-width: none;
+      scroll-padding-left: 0;
+      scroll-snap-type: x mandatory;
+
+      overflow-x: auto;
+      display: flex;
+      grid-column: 1/-1;
+      grid-row: 3;
+      flex-direction: row;
+      gap: 20px;
+
+      width: 100%;
+      min-width: 0;
     }
 
     &__product {
-      grid-column: span 3;
+      scroll-snap-align: start;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    &__product-second {
+      display: block;
     }
 
     &__image-first {
@@ -89,10 +109,12 @@
       width: 342px;
       height: 300px;
       background-image: url('../images/shop_picture2_tablet.jpg');
+      background-repeat: no-repeat;
     }
 
     &__button {
       grid-column: 3/5;
+      grid-row: 4;
       width: 280px;
       margin-top: 45px;
     }
@@ -121,8 +143,13 @@
 
     &__list {
       grid-column: 2/-1;
-      gap: 14px;
+      gap: 20px;
       justify-self: left;
+    }
+
+    &__slider {
+      grid-column: 2/-1;
+      grid-row: 3;
     }
 
     &__cat {
@@ -137,18 +164,8 @@
       }
     }
 
-    &__product-first {
-      grid-column: 2/8;
-      grid-row: 3;
-    }
-
-    &__product-second {
-      grid-column: 8/-1;
-      grid-row: 3;
-    }
-
     &__image-first {
-      width: 100%;
+      width: 530px;
       height: 500px;
       margin-left: 0;
 
@@ -159,12 +176,13 @@
       transition: transform 0.3s ease;
 
       &:hover {
+        z-index: 2;
         transform: scale(1.03);
       }
     }
 
     &__image-second {
-      width: 100%;
+      width: 530px;
       height: 500px;
 
       background-image: url('../images/shop_desktop_2.jpg');
@@ -174,6 +192,7 @@
       transition: transform 0.3s ease;
 
       &:hover {
+        z-index: 2;
         transform: scale(1.03);
       }
     }
