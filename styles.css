@@ -363,7 +363,7 @@ button {
 .hero__picture-mobile {
   grid-column: 1/-1;
   height: 267px;
-  background-image: url("src/images/header_mobile.jpg");
+  background-image: url("../images/header_mobile.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -394,7 +394,7 @@ button {
     grid-row: 1;
     height: 500px;
     margin-bottom: 40px;
-    background-image: url("src/images/header_tablet.jpg");
+    background-image: url("../images/header_tablet.jpg");
     background-repeat: no-repeat;
   }
   .hero__title {
@@ -422,7 +422,7 @@ button {
     grid-column: 7/13;
     grid-row: span 2;
     height: 451px;
-    background-image: url("src/images/header_desktop.jpg");
+    background-image: url("../images/header_desktop.jpg");
   }
   .hero__title {
     grid-column: 2/7;
@@ -570,7 +570,7 @@ button {
     align-self: self-start;
     width: 342px;
     height: 321px;
-    background-image: url("src/images/about_tablet.jpg");
+    background-image: url("../images/about_tablet.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: auto;
@@ -578,6 +578,7 @@ button {
   .about__button {
     grid-column: 1/4;
     grid-row: 3;
+    margin-top: 10px;
     text-decoration: none;
   }
 }
@@ -610,7 +611,7 @@ button {
     grid-row: span 3;
     width: 18px;
     height: 145px;
-    background-image: url("src/images/vertical_about.svg");
+    background-image: url("../images/vertical_about.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -620,7 +621,7 @@ button {
     align-self: self-end;
     width: 380px;
     height: 529px;
-    background-image: url("src/images/about_desktop_1.jpg");
+    background-image: url("../images/about_desktop_1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -631,7 +632,7 @@ button {
     align-self: self-end;
     width: 180px;
     height: 430px;
-    background-image: url("src/images/about_desktop_2.jpg");
+    background-image: url("../images/about_desktop_2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -682,7 +683,7 @@ button {
   width: 320px;
   height: 267px;
   margin-left: -20px;
-  background-image: url("src/images/shopimage_mobile.jpg");
+  background-image: url("../images/shopimage_mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -727,12 +728,12 @@ button {
     width: 342px;
     height: 300px;
     margin-left: 0;
-    background-image: url("src/images/shop_picture1_tablet.jpg");
+    background-image: url("../images/shop_picture1_tablet.jpg");
   }
   .shop__image-second {
     width: 342px;
     height: 300px;
-    background-image: url("src/images/shop_picture2_tablet.jpg");
+    background-image: url("../images/shop_picture2_tablet.jpg");
   }
   .shop__button {
     grid-column: 3/5;
@@ -756,7 +757,7 @@ button {
     grid-row: span 3;
     width: 18px;
     height: 145px;
-    background-image: url("src/images/vertical_shop.svg");
+    background-image: url("../images/vertical_shop.svg");
   }
   .shop__list {
     grid-column: 2/-1;
@@ -785,7 +786,7 @@ button {
     width: 100%;
     height: 500px;
     margin-left: 0;
-    background-image: url("src/images/shop_desktop_1.jpg");
+    background-image: url("../images/shop_desktop_1.jpg");
     background-position: left;
     background-size: cover;
     transition: transform 0.3s ease;
@@ -796,7 +797,7 @@ button {
   .shop__image-second {
     width: 100%;
     height: 500px;
-    background-image: url("src/images/shop_desktop_2.jpg");
+    background-image: url("../images/shop_desktop_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 0.3s ease;
@@ -872,7 +873,7 @@ button {
     grid-row: 1;
     width: 342px;
     height: 440px;
-    background-image: url("src/images/creators__tablet.jpg");
+    background-image: url("../images/creators__tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -908,7 +909,7 @@ button {
     grid-row: 1;
     width: 18px;
     height: 145px;
-    background-image: url("src/images/vertical_shop.svg");
+    background-image: url("../images/vertical_shop.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -924,7 +925,7 @@ button {
     grid-column: 7/13;
     width: 100%;
     height: 659px;
-    background-image: url("src/images/creators_desktop.jpg");
+    background-image: url("../images/creators_desktop.jpg");
     background-repeat: no-repeat;
     background-position: center right;
   }
@@ -964,7 +965,7 @@ button {
   width: 397px;
   height: 300px;
   margin-bottom: 30px;
-  background-image: url("src/images/features_mobile.svg");
+  background-image: url("../images/features_mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1041,7 +1042,7 @@ button {
     width: 515px;
     height: 397px;
     margin-bottom: 0;
-    background-image: url("src/images/features_tablet.svg");
+    background-image: url("../images/features_tablet.svg");
     background-position: right;
   }
   .features__button {
@@ -1100,7 +1101,7 @@ button {
     align-self: start;
     width: 18px;
     height: 145px;
-    background-image: url("src/images/vertical_features.svg");
+    background-image: url("../images/vertical_features.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1129,7 +1130,7 @@ button {
     grid-row: 1/6;
     width: 580px;
     height: 397px;
-    background-image: url("src/images/features_desktop.svg");
+    background-image: url("../images/features_desktop.svg");
   }
   .features__button {
     grid-column: 2/4;
@@ -1189,6 +1190,7 @@ button {
   box-sizing: border-box;
   width: 100%;
   height: 50px;
+  padding-top: 20px;
   border: none;
   border-bottom: 1px solid #bdbdbd;
   line-height: 150%;
@@ -1266,7 +1268,7 @@ button {
     align-self: self-end;
     width: 342px;
     height: 407px;
-    background-image: url("src/images/contact_tablet.jpg");
+    background-image: url("../images/contact_tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -1284,7 +1286,7 @@ button {
     grid-row: span 3;
     width: 18px;
     height: 145px;
-    background-image: url("src/images/vertical_contact.svg");
+    background-image: url("../images/vertical_contact.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1302,7 +1304,7 @@ button {
     align-self: self-end;
     width: 580px;
     height: 539px;
-    background-image: url("src/images/contact_desktop.jpg");
+    background-image: url("../images/contact_desktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
