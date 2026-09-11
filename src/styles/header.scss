@@ -7,7 +7,9 @@
   margin-left: $mobile-margin;
 
   @include tablet {
-    margin: 23px $tablet-margin 30px;
+    margin-right: $tablet-margin;
+    margin-bottom: 30px;
+    margin-left: $tablet-margin;
   }
 
   @include desktop-regular {

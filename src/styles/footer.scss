@@ -22,7 +22,6 @@
 
     width: 20px;
     height: 20px;
-    margin-bottom: 40px;
   }
 
   &__addres {
@@ -52,10 +51,6 @@
     text-transform: none;
   }
 
-  .wrapper {
-    margin-bottom: 20px;
-  }
-
   @include tablet {
     padding: 29px 27px;
 
@@ -67,9 +62,15 @@
       gap: 15px;
     }
 
+    &__link {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
     &__icons {
       grid-column: 1/4;
       grid-row: 2;
+      margin-bottom: 50px;
     }
 
     &__addres {
@@ -79,6 +80,7 @@
     &__end {
       grid-column: 1/7;
       justify-self: flex-start;
+      font-weight: 400;
     }
   }
 

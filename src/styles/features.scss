@@ -64,6 +64,8 @@
   @include tablet {
     @include grid;
 
+    margin-bottom: 130px;
+
     &__verticallogo {
       display: none;
     }
@@ -100,11 +102,13 @@
 
     &__icons {
       grid-column: 1/-1;
-      margin: 121px $tablet-margin 130px;
+      margin-right: $tablet-margin;
+      margin-left: $tablet-margin;
     }
 
     &__icontitle {
       grid-column: span 2;
+      margin-bottom: 0;
     }
   }
 

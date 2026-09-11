@@ -26,15 +26,13 @@
   }
 
   @include tablet {
-    margin-bottom: 130px;
+    margin-right: $tablet-margin;
+    margin-bottom: 117px;
     margin-left: $tablet-margin;
-
-    margin-rigt: $tablet-margin;
 
     &__title {
       grid-column: 1/-1;
       grid-row: 1;
-      margin-bottom: 0;
     }
 
     &__description-1 {

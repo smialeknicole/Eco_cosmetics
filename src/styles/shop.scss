@@ -52,7 +52,7 @@
 
   @include tablet {
     margin-right: $tablet-margin;
-    margin-bottom: 200px;
+    margin-bottom: 130px;
     margin-left: $tablet-margin;
 
     &__verticallogo {
@@ -67,6 +67,7 @@
     &__list {
       gap: 14px;
       justify-self: left;
+      margin-bottom: 20px;
     }
 
     &__product-second {
@@ -93,6 +94,7 @@
     &__button {
       grid-column: 3/5;
       width: 280px;
+      margin-top: 45px;
     }
   }
 

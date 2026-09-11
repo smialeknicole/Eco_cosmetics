@@ -16,7 +16,7 @@
     margin-left: $tablet-margin;
 
     &__title {
-      grid-column: 3/5;
+      grid-column: span 4;
       text-align: center;
     }
   }
