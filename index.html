@@ -8,20 +8,20 @@
     />
     <title>ECO-COSMETICS</title>
 
-    <link rel="icon" href="/Eco_cosmetics/assets/favicon-Cw6qYD3t.svg">
+    <link rel="icon" href="../images/favicon.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 
 
-    <script type="module" crossorigin src="/Eco_cosmetics/assets/index-mYBa-woh.js"></script>
-    <link rel="stylesheet" crossorigin href="/Eco_cosmetics/assets/index-bN-IxsE7.css">
+    <script type="module" crossorigin src="/Eco_cosmetics/assets/index-DJ_KaouT.js"></script>
+    <link rel="stylesheet" crossorigin href="/Eco_cosmetics/assets/index-Ukb895Hg.css">
   </head>
 
   <body>
 
-    <header class="header" id="home">
+    <header class="header" id="#home">
 
       <nav class="navigation wrapper">
 
@@ -50,7 +50,7 @@
         <ul class="navigation__list text-menu">
 
           <li class="navigation__item">
-            <a href="#shop" class="navigation__link text-menu">Shop</a>
+            <a href="#product" class="navigation__link text-menu">Shop</a>
           </li>
 
           <li class="navigation__item">
@@ -75,7 +75,7 @@
         <ul class="menu__list">
 
           <li class="menu__item">
-            <a href="#shop" class="menu__link text-menu">Shop</a>
+            <a href="#product" class="menu__link text-menu">Shop</a>
           </li>
 
           <li class="menu__item">
@@ -93,12 +93,14 @@
 
     <main class="content">
 
+      <div class="hero__picture-mobile"></div>
+
       <div class="hero wrapper">
 
         <div class="hero__picture"></div>
 
         <h1 class="hero__title">
-        Brand of eco-<br>cosmetics and magic candles
+        Brand Of Eco-<br>Cosmetics And Magic Candles
         </h1>
 
         <p class="hero__description text">
@@ -119,8 +121,8 @@
         </p>
 
         <h5 class="quote__title">
-          if you choose the gifts of nature
-          and care about it’s - scroll down
+          if you choose the gifts of<br> nature
+          and care about<br> it’s - scroll down
         </h5>
 
         <div class="quote__line-bottom"></div>
@@ -179,17 +181,32 @@
           <a class="shop__cat text-2" href="#candles">candles</a>
         </div>
 
-        <div class="shop__product shop__product-first">
+        <div class="shop__slider">
 
-          <div class="shop__image shop__image-first"></div>
-          <h5 class="shop__name">Hydrophilic oil</h5>
-          <p class="shop__price text-3">160 UAH</p>
-        </div>
+          <div class="shop__product shop__product-first" id="face">
+            <div class="shop__image shop__image-first"></div>
+            <h5 class="shop__name">Hydrophilic oil face</h5>
+            <p class="shop__price text-3">160 UAH</p>
+          </div>
 
-        <div class="shop__product shop__product-second">
-          <div class="shop__image shop__image-second"></div>
-          <h5 class="shop__name">Ubtan</h5>
-          <p class="shop__price text-3">160 UAH</p>
+          <div class="shop__product shop__product-second" id="body">
+            <div class="shop__image shop__image-second"></div>
+            <h5 class="shop__name">Ubtan body</h5>
+            <p class="shop__price text-3">160 UAH</p>
+          </div>
+
+          <div class="shop__product shop__product-second" id="hair">
+            <div class="shop__image shop__image-second"></div>
+            <h5 class="shop__name">Ubtan hair</h5>
+            <p class="shop__price text-3">160 UAH</p>
+          </div>
+
+          <div class="shop__product shop__product-second" id="candles">
+            <div class="shop__image shop__image-first"></div>
+            <h5 class="shop__name">Hydrophilic oil candles</h5>
+            <p class="shop__price text-3">160 UAH</p>
+          </div>
+
         </div>
 
         <button class="button shop__button">All products</button>
@@ -314,6 +331,7 @@
                 id="name"
                 name="name"
                 placeholder="Your name"
+                required
               >
             </div>
 
@@ -324,7 +342,9 @@
                 type="email"
                 id="email"
                 name="email"
-                placeholder="E-mail">
+                placeholder="E-mail"
+                required
+                >
             </div>
 
 
@@ -335,7 +355,10 @@
                 type="tel"
                 id="phone"
                 name="phone"
-                placeholder="Phone number">
+                placeholder="Phone number"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+                required
+                >
             </div>
 
             <div class="contact__input-wrapper">
@@ -345,7 +368,8 @@
                 id="message"
                 name="message"
                 placeholder="Your Message"
-                required></textarea>
+                required
+                ></textarea>
             </div>
 
             <button class="button contact__button">Send a message</button>
@@ -358,28 +382,49 @@
 
       </section>
 
+      <section class="product wrapper" id="product">
+
+        <h5 class="product__name">Hydrophilic oil</h5>
+        <p class="product__price text-3">160 UAH</p>
+        <div class="product__image"></div>
+
+        <button class="button product__button">Add to bag</button>
+
+        <p class="product__description text-small">Ingredients: cocosulfate, aloe hydrolate,
+          sweet almond oil, wheat proteins, chamomile grass,
+          lavender essential oil.
+        </p>
+
+        <p class="product__description text-small">Application: foam the shampoo in your hands and
+          apply foam on the hair or draw a block over wet hair,
+          foam, massage, rinse, apply balm or conditioner.
+        </p>
+
+      </section>
+
     </main>
 
     <section class="footer">
 
       <div class="wrapper">
         <div class="footer__list">
+
           <a class="footer__link text-menu" href="#shop">Shop</a>
           <a class="footer__link text-menu" href="#contact">Contact</a>
           <a class="footer__link text-menu" href="#about">About</a>
-        </div>
 
-        <div class="footer__icons">
-          <a class="footer__icon" href="#">
-            <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.69531%200.5H17.3047C18.517%200.5%2019.5%201.48299%2019.5%202.69531V17.3047C19.5%2018.5169%2018.5169%2019.5%2017.3047%2019.5H13.5186L13.5293%2013.3535H15.498C15.9734%2013.3535%2016.3737%2012.9974%2016.4297%2012.5254L16.7031%2010.2217C16.7693%209.66376%2016.3332%209.17298%2015.7715%209.17285H13.5176V7.74609C13.5176%207.33085%2013.5813%207.12058%2013.6777%207.00586C13.758%206.91049%2013.9537%206.77637%2014.5137%206.77637H15.6738C16.1916%206.77605%2016.6113%206.35587%2016.6113%205.83789V3.89551C16.6113%203.37742%2016.1918%202.95715%2015.6738%202.95703H13.7822C12.5287%202.95712%2011.4214%203.34174%2010.626%204.12793C9.82894%204.91574%209.40039%206.05229%209.40039%207.44727V9.17285H8.04688C7.52752%209.173%207.10739%209.59579%207.10938%2010.1152L7.11816%2012.4189C7.12038%2012.9353%207.53924%2013.3524%208.05566%2013.3525H9.41211L9.40137%2019.5H2.69531C1.48301%2019.5%200.5%2018.517%200.5%2017.3047V2.69531C0.5%201.48301%201.48305%200.5%202.69531%200.5Z'%20stroke='%23E4DFD3'/%3e%3c/svg%3e" alt="Facebook">
-          </a>
-          <a class="footer__icon" href="#">
-            <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='19'%20height='19'%20rx='4.5'%20stroke='%23E4DFD3'/%3e%3ccircle%20cx='10'%20cy='10'%20r='3.5'%20stroke='%23E4DFD3'/%3e%3ccircle%20cx='15.5'%20cy='4.5'%20r='1'%20stroke='%23E4DFD3'/%3e%3c/svg%3e" alt="Instagram">
-          </a>
+          <div class="footer__icons">
+            <a class="footer__icon" href="https://www.facebook.com/" target="_blank">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.69531%200.5H17.3047C18.517%200.5%2019.5%201.48299%2019.5%202.69531V17.3047C19.5%2018.5169%2018.5169%2019.5%2017.3047%2019.5H13.5186L13.5293%2013.3535H15.498C15.9734%2013.3535%2016.3737%2012.9974%2016.4297%2012.5254L16.7031%2010.2217C16.7693%209.66376%2016.3332%209.17298%2015.7715%209.17285H13.5176V7.74609C13.5176%207.33085%2013.5813%207.12058%2013.6777%207.00586C13.758%206.91049%2013.9537%206.77637%2014.5137%206.77637H15.6738C16.1916%206.77605%2016.6113%206.35587%2016.6113%205.83789V3.89551C16.6113%203.37742%2016.1918%202.95715%2015.6738%202.95703H13.7822C12.5287%202.95712%2011.4214%203.34174%2010.626%204.12793C9.82894%204.91574%209.40039%206.05229%209.40039%207.44727V9.17285H8.04688C7.52752%209.173%207.10739%209.59579%207.10938%2010.1152L7.11816%2012.4189C7.12038%2012.9353%207.53924%2013.3524%208.05566%2013.3525H9.41211L9.40137%2019.5H2.69531C1.48301%2019.5%200.5%2018.517%200.5%2017.3047V2.69531C0.5%201.48301%201.48305%200.5%202.69531%200.5Z'%20stroke='%23E4DFD3'/%3e%3c/svg%3e" alt="Facebook">
+            </a>
+            <a class="footer__icon" href="https://www.instagram.com/" target="_blank">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='19'%20height='19'%20rx='4.5'%20stroke='%23E4DFD3'/%3e%3ccircle%20cx='10'%20cy='10'%20r='3.5'%20stroke='%23E4DFD3'/%3e%3ccircle%20cx='15.5'%20cy='4.5'%20r='1'%20stroke='%23E4DFD3'/%3e%3c/svg%3e" alt="Instagram">
+            </a>
+          </div>
         </div>
 
         <div class="footer__addres">
-          <a class="footer__addressline text-small" href="#shop">Ukraine</a>
+          <a class="footer__addressline text-small" href="https://maps.app.goo.gl/CwWc2ArwFYnLsW5n8" target="_blank">Ukraine</a>
           <a class="footer__addressline text-small" href="mailto:support.mountain@gmail.com">support.mountain@gmail.com</a>
           <a class="footer__addressline text-small" href="tel:+38 093 447 68 39">+38 093 447 68 39</a>
           <a class="footer__addressline text-small" href="#about">Support is available Monday - Friday 9am-6pm</a>
@@ -390,8 +435,6 @@
           &copy; 2019 witch of mountain winds
         </span>
       </div>
-
-
 
     </section>
 
