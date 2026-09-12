@@ -357,7 +357,7 @@ button {
 
 .hero {
   margin-right: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   margin-left: 20px;
 }
 .hero__picture-mobile {
@@ -452,7 +452,7 @@ button {
 }
 
 .quote {
-  margin: 0 20px 100px;
+  margin: 0 20px 80px;
 }
 .quote__description {
   display: none;
@@ -531,10 +531,13 @@ button {
 }
 .about__title {
   grid-column: 1/-1;
+  grid-row: 1;
+  margin: 0;
 }
 .about__description-1 {
   grid-column: 1/-1;
-  margin-bottom: 30px;
+  grid-row: 2;
+  margin-bottom: 10px;
   color: #333;
 }
 .about__description-2 {
@@ -545,6 +548,7 @@ button {
 }
 .about__button {
   grid-column: 1/-1;
+  grid-row: 3;
   text-decoration: none;
 }
 @media (min-width: 768px) {
@@ -660,7 +664,7 @@ button {
 
 .shop {
   margin-right: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   margin-left: 20px;
 }
 .shop-product {
@@ -668,11 +672,14 @@ button {
 }
 .shop__title {
   grid-column: 1/-1;
-  justify-self: left;
+  grid-row: 1;
+  justify-self: center;
+  margin-bottom: 0;
 }
 .shop__list {
   display: flex;
   grid-column: 1/-1;
+  grid-row: 2;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 34px;
 }
@@ -687,8 +694,9 @@ button {
   background-repeat: no-repeat;
   background-position: center;
 }
-.shop__product {
-  grid-column: span 3;
+.shop__slider {
+  grid-column: 1/-1;
+  grid-row: 3;
 }
 .shop__product-second {
   display: none;
@@ -698,6 +706,7 @@ button {
 }
 .shop__button {
   grid-column: 1/-1;
+  grid-row: 4;
   width: 280px;
 }
 @media (min-width: 768px) {
@@ -838,7 +847,7 @@ button {
 .creators {
   display: grid;
   grid-column: 1/-1;
-  margin: 0 20px 100px;
+  margin: 0 20px 80px;
 }
 .creators__leftcontent {
   display: flex;
@@ -858,7 +867,7 @@ button {
 }
 .creators__button {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 36px;
   text-decoration: none;
 }
 @media (min-width: 768px) {
@@ -965,7 +974,7 @@ button {
 }
 
 .features {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .features__title {
   margin-left: 20px;
@@ -979,8 +988,8 @@ button {
   display: none;
 }
 .features__image {
-  width: 397px;
-  height: 300px;
+  width: 300px;
+  height: 397px;
   margin-bottom: 30px;
   background-image: url("../images/features_mobile.svg");
   background-repeat: no-repeat;
@@ -1182,7 +1191,7 @@ button {
 
 .contact {
   grid-column: 1/-1;
-  margin: 0 20px 100px;
+  margin: 0 20px 80px;
 }
 .contact__leftcontent {
   grid-column: 1/-1;
@@ -1201,7 +1210,7 @@ button {
   display: none;
 }
 .contact__description {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .contact__input {
   box-sizing: border-box;

@@ -1,6 +1,6 @@
 .shop {
   margin-right: $mobile-margin;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   margin-left: $mobile-margin;
 
   &-product {
@@ -9,12 +9,15 @@
 
   &__title {
     grid-column: 1/-1;
-    justify-self: left;
+    grid-row: 1;
+    justify-self: center;
+    margin-bottom: 0;
   }
 
   &__list {
     display: flex;
     grid-column: 1 / -1;
+    grid-row: 2;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 34px;
   }
@@ -33,8 +36,9 @@
     background-position: center;
   }
 
-  &__product {
-    grid-column: span 3;
+  &__slider {
+    grid-column: 1/-1;
+    grid-row: 3;
   }
 
   &__product-second {
@@ -47,6 +51,7 @@
 
   &__button {
     grid-column: 1 / -1;
+    grid-row: 4;
     width: 280px;
   }
 

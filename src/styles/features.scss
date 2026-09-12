@@ -1,7 +1,7 @@
 @use '../styles/utils/mixins';
 
 .features {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 
   &__title {
     margin-left: $mobile-margin;
@@ -18,8 +18,8 @@
   }
 
   &__image {
-    width: 397px;
-    height: 300px;
+    width: 300px;
+    height: 397px;
     margin-bottom: 30px;
 
     background-image: url('../images/features_mobile.svg');
