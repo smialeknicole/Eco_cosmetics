@@ -54,6 +54,11 @@
       justify-self: right;
     }
 
+    &__link {
+      color: $secondary-color;
+      text-decoration: none;
+    }
+
     &__headline {
       display: flex;
       grid-column: 1/4;
@@ -74,8 +79,6 @@
       grid-row: 1;
       flex-direction: row;
       gap: 40px;
-
-      text-decoration: none;
     }
   }
 }

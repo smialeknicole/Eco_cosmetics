@@ -72,9 +72,9 @@
   }
 
   @include desktop-regular {
+    margin-right: $regular-margin;
+    margin-bottom: 200px;
     margin-left: $regular-margin;
-
-    margin-rigt: $regular-margin;
 
     &__title {
       grid-column: 2/8;

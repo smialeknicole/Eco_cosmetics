@@ -155,8 +155,20 @@
       grid-row: 1;
     }
 
+    &__title {
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+
     &__description {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    &__input {
+      height: 60px;
+      padding-bottom: 15px;
+      font-size: 18px;
     }
 
     &__image {
@@ -175,11 +187,14 @@
     }
 
     &__textarea {
-      margin-top: 45px;
+      margin-top: 70px;
+      padding-top: 5px;
+      font-size: 18px;
     }
 
     &__button {
       width: 280px;
+      margin-top: 50px;
     }
   }
 
