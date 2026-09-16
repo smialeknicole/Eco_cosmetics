@@ -8,6 +8,7 @@
   &__title {
     grid-column: 1/-1;
     color: $secondary-color;
+    text-align: center;
   }
 
   @include tablet {

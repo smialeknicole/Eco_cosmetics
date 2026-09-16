@@ -113,7 +113,7 @@
     }
 
     &__description-text {
-      margin-bottom: 30px;
+      margin-bottom: 10px;
       font-size: 16px;
       color: $primairly-font-color;
     }
@@ -135,7 +135,7 @@
 
     &__button {
       width: fit-content;
-      margin-top: 15px;
+      margin-top: 10px;
       padding-bottom: 10px;
       border-bottom: 1px solid transparent;
 
@@ -144,6 +144,10 @@
       &:hover {
         border-bottom: 1px solid $secondary-color;
       }
+    }
+
+    &__contact {
+      margin-top: 10px;
     }
   }
 
