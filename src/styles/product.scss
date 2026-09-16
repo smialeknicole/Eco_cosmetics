@@ -21,10 +21,18 @@ body:has(.product:target) {
 
   &__name {
     grid-column: 1/-1;
+    grid-row: 1;
+    align-self: start;
+    margin-bottom: 30px;
   }
 
   &__price {
     grid-column: 1/-1;
+    grid-row: 1;
+    align-self: end;
+
+    font-size: 14px;
+    font-weight: 300;
   }
 
   &__image {
@@ -33,7 +41,7 @@ body:has(.product:target) {
     width: 280px;
     height: 248px;
 
-    background-image: url('src/images/product_image_mobile.jpg');
+    background-image: url('../images/product_image_mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -45,6 +53,10 @@ body:has(.product:target) {
   &__button {
     grid-column: 1 / -1;
     width: 280px;
+  }
+
+  &__description--color {
+    color: $secondary-color;
   }
 
   @include tablet {
