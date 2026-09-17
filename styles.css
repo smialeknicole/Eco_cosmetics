@@ -696,7 +696,7 @@ button {
   font-weight: 400;
   color: #828282;
 }
-.shop__cat:hover {
+.shop__cat:focus, .shop__cat:hover {
   border-bottom: 2px solid #333;
   font-weight: 400;
   color: #333;
@@ -848,7 +848,7 @@ button {
     font-size: 18px;
     font-weight: 600;
   }
-  .shop__cat:hover {
+  .shop__cat:focus, .shop__cat:hover {
     border-bottom: 1px solid #333;
     font-weight: 600;
     color: #333;
