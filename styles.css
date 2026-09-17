@@ -1679,7 +1679,7 @@ body:has(.product:target) .contact {
     justify-self: center;
     width: 466px;
     height: 440px;
-    background-image: url("src/images/product_image_tablet.jpg");
+    background-image: url("../images/product_image_tablet.jpg");
   }
   .product__button {
     grid-column: 2/6;
