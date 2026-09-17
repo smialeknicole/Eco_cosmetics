@@ -58,13 +58,14 @@
     box-sizing: border-box;
     width: 100%;
     height: 40px;
-    margin-top: 45px;
+    min-height: 90px;
+    margin-top: 10px;
     margin-bottom: 0;
     padding-top: 14px;
     border: none;
     border-bottom: 1px solid $gray-3;
 
-    line-height: 150%;
+    line-height: 140%;
 
     background-color: transparent;
     outline: none;
@@ -129,7 +130,7 @@
     }
 
     &__textarea {
-      margin-top: 35px;
+      margin-top: 10px;
     }
 
     &__button {
@@ -187,7 +188,7 @@
     }
 
     &__textarea {
-      margin-top: 70px;
+      margin-top: 25px;
       padding-top: 5px;
       font-size: 18px;
     }
